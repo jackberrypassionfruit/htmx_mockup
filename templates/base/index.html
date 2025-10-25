@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}?v={{ now|date:'U' }}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}"> <!-- ?v={{ now|date:'U' }}"> -->
     <title>Document</title>
 </head>
 
@@ -37,22 +37,106 @@
             </span>
         </span>
         <strong id="banner-title">Serialize</strong>
-        <p></p>
+        <span>
+            <p></p>
+        </span>
     </div>
     <div class="filters">
-        <em>Reload Icon</em>
-        <input type="text" placeholder="Search Job">
-        <em>Reset Button</em>
-        <strong>Site:</strong>
-        <select id="browsers">
-            <option default>Select a Site</option>
-            <option value="Burlington">P6B</option>
-            <option value="APD">APD</option>
-            <option value="Cleveland">P6C</option>
-        </select>
-        <u id="gallery-title"><strong>Jobs at Serialize</strong></u>
-        <input type="checkbox" id="my-toggle">
-        <label for="my-toggle">CSS Filter</label>
+        <div class="left-of-filter">
+            <svg viewBox='0 0 2048 2048' xmlns='http://www.w3.org/2000/svg'>
+                <path
+                    d='M1297 38q166 45 304 140t237 226 155 289 55 331q0 141-36 272t-103 245-160 207-208 160-245 103-272 37q-141 0-272-36t-245-103-207-160-160-208-103-244-37-273q0-140 37-272t105-248 167-212 221-164H256V0h512v512H640V215q-117 56-211 140T267 545 164 773t-36 251q0 123 32 237t90 214 141 182 181 140 214 91 238 32q123 0 237-32t214-90 182-141 140-181 91-214 32-238q0-150-48-289t-136-253-207-197-266-124l34-123z'
+                    fill='#000000'>
+                </path>
+            </svg>
+            <input type="text" placeholder="Search Job">
+            <svg viewBox='0 0 2048 2048' xmlns='http://www.w3.org/2000/svg'>
+                <path
+                    d='M1920 1216q0 115-30 221t-84 198-130 169-168 130-199 84-221 30q-115 0-221-30t-198-84-169-130-130-168-84-199-30-221v-64h128v64q0 97 25 187t71 168 110 142 143 111 168 71 187 25q97 0 187-25t168-71 142-110 111-143 71-168 25-187q0-97-25-187t-71-168-110-142-143-111-168-71-187-25H250l291 291-90 90L6 448 451 3l90 90-291 291h838q115 0 221 30t198 84 169 130 130 168 84 199 30 221z'
+                    fill='#000000'>
+                </path>
+            </svg>
+        </div>
+        <div><u id="gallery-title"><strong>Jobs at Serialize</strong></u></div>
+        <div class="right-of-filter">
+            <div>
+                <div><strong>Site:</strong></div>
+                <select id="browsers">
+                    <option default>Select a Site</option>
+                    <option value="Burlington">P6B</option>
+                    <option value="APD">APD</option>
+                    <option value="Cleveland">P6C</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="css-toggle">
+                <label for="css-toggle">CSS Filter</label>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        {% for row in jobs %}
+        <div class="job-row">
+            <div class="job-row-details">
+                <div>
+                    <strong>Job #{{ row.job_number }}</strong>
+                    {% if row.request_type == 'Eng Trial' %}
+                    <svg viewBox='0 0 2048 2048' xmlns='http://www.w3.org/2000/svg'>
+                        <path
+                            d='M1920 256v1024h-896v-256H384v1024H256V0h896v256h768zm-896 640V128H384v768h640zm768-512h-640v768h640V384z'
+                            fill='#000000'>
+                        </path>
+                    </svg>
+                    {% endif %}
+                </div>
+                <div>
+                    <em><strong>Part Number: </strong>{{ row.part_number }}</em>
+                </div>
+                <div>
+                    <em><strong>Qty Parts: </strong>{{ row.qty_parts }}</em>
+                </div>
+            </div>
+            <div class="select-job select-icon">
+                <div>
+                    <svg viewBox='0 0 2048 2048' xmlns='http://www.w3.org/2000/svg'>
+                        <path
+                            d='M1491 595l90 90-749 749-365-365 90-90 275 275 659-659zM1024 0q141 0 272 36t245 103 207 160 160 208 103 245 37 272q0 141-36 272t-103 245-160 207-208 160-245 103-272 37q-141 0-272-36t-245-103-207-160-160-208-103-244-37-273q0-141 36-272t103-245 160-207 208-160T751 37t273-37zm0 1920q123 0 237-32t214-90 182-141 140-181 91-214 32-238q0-123-32-237t-90-214-141-182-181-140-214-91-238-32q-123 0-237 32t-214 90-182 141-140 181-91 214-32 238q0 123 32 237t90 214 141 182 181 140 214 91 238 32z'
+                            fill='#000000'>
+                        </path>
+                    </svg>
+                </div>
+                <div><em>Select job</em></div>
+            </div>
+            <div class="hold-toggles">
+                <span class="eng-review">
+                    <input type="checkbox" id="eng-toggle">
+                    <label for="eng-toggle">Eng Review</label>
+                </span>
+                <span class="eng-review">
+                    <input type="checkbox" id="mrb-toggle">
+                    <label for="mrb-toggle">MRB</label>
+                </span>
+            </div>
+            <div class="data-toggles">
+                <span class="parts-serialized">
+                    <input type="checkbox" id="serialized-toggle">
+                    <label for="serialized-toggle">All Parts Serialized?</label>
+                </span>
+            </div>
+            <div class="scrap-parts select-icon">
+                <svg viewBox='0 0 2048 2048' xmlns='http://www.w3.org/2000/svg'>
+                    <path
+                        d='M1115 1024l690 691-90 90-691-690-691 690-90-90 690-691-690-691 90-90 691 690 691-690 90 90-690 691z'
+                        fill='#d13438'>
+                    </path>
+                </svg>
+                <em>Scrap Parts</em>
+            </div>
+            <div class="move-txnx">
+                <button>Finish Serialize</button>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </body>
 

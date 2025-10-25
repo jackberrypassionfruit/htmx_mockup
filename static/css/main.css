@@ -2,18 +2,8 @@ body {
     font-size: 15px;
 }
 
-svg {
-    padding-top: 5px;
-    height: 45px;
-}
-
 #banner-title {
     font-size: 45px;
-    /* border: 5px solid red; */
-    text-align: center;
-}
-#gallery-title {
-    font-size: 30px;
     /* border: 5px solid red; */
     text-align: center;
 }
@@ -22,12 +12,105 @@ svg {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    
-    padding: 0 10px;
+
     background-color: lightblue;
 }
 
-.filters > em {
+.banner > * {
+    width: 33%;
+    /* border: 2px dotted rgb(96 139 168); */
+}
+
+.links > svg {
+    padding-left: 5px;
+}
+
+.links svg {
+    padding-top: 5px;
+    height: 45px;
+}
+
+.filters {
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-between;
+    margin: 5px 35px;
+}
+
+.filters > div {
+    width: 33%;
+    /* border: 2px dotted rgb(96 139 168); */
+}
+
+.filters svg {
+    height: 45px;
+    padding: 5px 5px 5px 0;
+}
+
+.left-of-filter, .right-of-filter {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#gallery-title {
+    font-size: 30px;
+    /* border: 5px solid red; */
+    /* text-align: center; */
+    display: table;
+    margin: 0 auto;
+}
+
+.select-icon > * {
+    display: table;
+    margin: 0 auto;
+}
+
+.scrap-parts svg, .select-job svg {
+    height: 45px;
+}
+
+.hold {
     border: 2px dashed orange;
-    margin: 0 10px;
+}
+
+.gallery{
+    border: 2px solid blue;
+}
+
+.job-row {
+    border-bottom: 1px solid blue;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.job-row > * {
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+
+.job-row-details svg {
+    height: 15px;
+}
+
+.hold-toggles {
+    /* border: 1px solid red; */
+}
+
+.data-toggles {
+    flex: 2;
+}
+
+.data-toggles > span {
+    display: table;
+    margin: 0 auto;
+}
+
+.move-txnx > button {
+    height: 65px;
+    border-radius: 8px;;
 }
