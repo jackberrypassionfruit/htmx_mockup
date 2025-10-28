@@ -1,0 +1,18 @@
+{% block content %}
+
+<div x-data="{ selected_job: 'None' }">
+    <span x-text="selected_job"></span>
+    {% for row in jobs %}
+    <ul class="job-row">
+        <li>
+            {{ row.job_number }}
+            <img src="static/svg/select.svg" @click="selected_job = '{{ row.job_number }}'"
+                :class="{ 'selected': selected_job == '{{ row.job_number }}' }">
+            <!-- <img :class="{ 'hidden': selected_job != '{{ row.job_number }}' }" src="static/svg/cancel.svg"> -->
+            <button x-bind:disabled="selected_job != '{{ row.job_number }}'">MOVE JOB</button>
+        </li>
+    </ul>
+    {% endfor %}
+</div>
+
+{% endblock %}

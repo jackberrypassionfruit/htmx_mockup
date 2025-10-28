@@ -2,6 +2,11 @@ body {
     font-size: 15px;
 }
 
+object {
+    height: 45px;
+    padding-top: 0;
+}
+
 #banner-title {
     font-size: 45px;
     /* border: 5px solid red; */
@@ -53,7 +58,6 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
 
 #gallery-title {
     font-size: 30px;
@@ -113,4 +117,18 @@ body {
 .move-txnx > button {
     height: 65px;
     border-radius: 8px;;
+}
+
+
+
+.brash {
+    fill: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.selected {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }

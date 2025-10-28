@@ -1,0 +1,60 @@
+{% block content %}
+
+<div class="gallery" x-data="{ selected_job: '' }">
+    <p x-text="selected_job"></p>
+    {% for row in jobs %}
+    <div class="job-row">
+        <div class="job-row-details">
+            <div>
+                <strong>Job #{{ row.job_number }}</strong>
+                {% if row.request_type == 'Eng Trial' %}
+
+                <object data="static/svg/flag.svg" type="image/svg+xml">
+                    <img src="yourfallback.jpg" />
+                </object>
+                {% endif %}
+            </div>
+            <div>
+                <em><strong>Part Number: </strong>{{ row.part_number }}</em>
+            </div>
+            <div>
+                <em><strong>Qty Parts: </strong>{{ row.qty_parts }}</em>
+            </div>
+        </div>
+        <div class="select-job select-icon">
+            <div x-data @click="selected_job = 'fart'">
+                <object data="static/svg/select.svg" type="image/svg+xml">
+                    <img src="yourfallback.jpg" />
+                </object>
+            </div>
+            <div><em>Select job</em></div>
+        </div>
+        <div class="hold-toggles">
+            <span class="eng-review">
+                <input type="checkbox" id="eng-toggle">
+                <label for="eng-toggle">Eng Review</label>
+            </span>
+            <span class="eng-review">
+                <input type="checkbox" id="mrb-toggle">
+                <label for="mrb-toggle">MRB</label>
+            </span>
+        </div>
+        <div class="data-toggles">
+            <span class="parts-serialized">
+                <input type="checkbox" id="serialized-toggle">
+                <label for="serialized-toggle">All Parts Serialized?</label>
+            </span>
+        </div>
+        <div class="scrap-parts select-icon">
+            <object data="static/svg/cancel.svg" type="image/svg+xml">
+                <img src="yourfallback.jpg" />
+            </object>
+            <em>Scrap Parts</em>
+        </div>
+        <div class="move-txnx">
+            <button>Finish Serialize</button>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

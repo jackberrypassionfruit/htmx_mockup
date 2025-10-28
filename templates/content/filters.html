@@ -1,0 +1,30 @@
+{% block content %}
+<div class="filters">
+    <div class="left-of-filter">
+        <object data="static/svg/refresh.svg" type="image/svg+xml">
+            <img src="yourfallback.jpg" />
+        </object>
+        <input type="text" placeholder="Search Job">
+        <object data="static/svg/reset.svg" type="image/svg+xml">
+            <img src="yourfallback.jpg" />
+        </object>
+    </div>
+    <div><u id="gallery-title"><strong>Jobs at Serialize</strong></u></div>
+    <div class="right-of-filter">
+        <div>
+            <div><strong>Site:</strong></div>
+            <select id="browsers">
+                <option default>Select a Site</option>
+                <option value="Burlington">P6B</option>
+                <option value="APD">APD</option>
+                <option value="Cleveland">P6C</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="css-toggle">
+            <label for="css-toggle">CSS Filter</label>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
