@@ -1,18 +1,47 @@
 {% block content %}
-
-<div x-data="{ selected_job: 'None' }">
-    <span x-text="selected_job"></span>
-    {% for row in jobs %}
-    <ul class="job-row">
-        <li>
-            {{ row.job_number }}
-            <img src="static/svg/select.svg" @click="selected_job = '{{ row.job_number }}'"
-                :class="{ 'selected': selected_job == '{{ row.job_number }}' }">
-            <!-- <img :class="{ 'hidden': selected_job != '{{ row.job_number }}' }" src="static/svg/cancel.svg"> -->
-            <button x-bind:disabled="selected_job != '{{ row.job_number }}'">MOVE JOB</button>
-        </li>
-    </ul>
-    {% endfor %}
+<div x-data="{ 'isModalOpen': false }" x-on:keydown.escape="isModalOpen = false">
+    <div x-data="{ 'isModalOpen2': false }" x-on:keydown.escape="isModalOpen2 = false">
+        <div x-data="{ selected_job: 'None' }">
+            {% for row in jobs %}
+            <ul class="job-row">
+                <li>
+                    {{ row.job_number }}
+                    <img src="static/svg/select.svg" @click="selected_job = '{{ row.job_number }}'"
+                        :class="{ 'selected': selected_job == '{{ row.job_number }}' }">
+                    <!-- <img :class="{ 'hidden': selected_job != '{{ row.job_number }}' }" src="static/svg/cancel.svg"> -->
+                    <button x-bind:disabled="selected_job != '{{ row.job_number }}'"
+                        hx-get="/get-parts/{{ row.job_number }}" hx-trigger="click" hx-target="next .parts"
+                        hx-trigger="click" hx-swap="innerHTML" x-on:click="isModalOpen = true">MOVE
+                        JOB</button>
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
+        <div class="modal" role="dialog" tabindex="-1" x-show="isModalOpen" x-on:click.away="isModalOpen = false"
+            x-cloak x-transition>
+            <div class="model-inner">
+                <div class="modal-header">
+                    <h3>Hello World</h3>
+                    <button aria-label="Close" x-on:click="isModalOpen = false">✖</button>
+                </div>
+                <ul class="parts"></ul>
+                <button>Cancel</button>
+                <button x-on:click="isModalOpen = false; isModalOpen2 = true">Scrap Parts?</button>
+            </div>
+        </div>
+        <div class="modal" role="dialog" tabindex="-1" x-show="isModalOpen2" x-on:click.away="isModalOpen2 = false"
+            x-cloak x-transition>
+            <div class="model-inner">
+                <div class="modal-header">
+                    <h3>Hello World</h3>
+                    <button aria-label="Close" x-on:click="isModalOpen2 = false">✖</button>
+                </div>
+                <ul class="parts"></ul>
+                <button>Are you sure?</button>
+            </div>
+        </div>
+        <div class="overlay" x-show="isModalOpen" x-cloak></div>
+        <div class="overlay" x-show="isModalOpen2" x-cloak></div>
+    </div>
 </div>
-
 {% endblock %}

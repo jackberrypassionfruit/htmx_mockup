@@ -1,17 +1,13 @@
 {% block content %}
 
-<div class="gallery" x-data="{ selected_job: '' }">
-    <p x-text="selected_job"></p>
+<div class="gallery" x-data="{ selected_job: 'None' }">
     {% for row in jobs %}
     <div class="job-row">
         <div class="job-row-details">
             <div>
                 <strong>Job #{{ row.job_number }}</strong>
                 {% if row.request_type == 'Eng Trial' %}
-
-                <object data="static/svg/flag.svg" type="image/svg+xml">
-                    <img src="yourfallback.jpg" />
-                </object>
+                <img src="static/svg/flag.svg">
                 {% endif %}
             </div>
             <div>
@@ -22,11 +18,8 @@
             </div>
         </div>
         <div class="select-job select-icon">
-            <div x-data @click="selected_job = 'fart'">
-                <object data="static/svg/select.svg" type="image/svg+xml">
-                    <img src="yourfallback.jpg" />
-                </object>
-            </div>
+            <img src="static/svg/select.svg" @click="selected_job = '{{ row.job_number }}'"
+                :class="{ 'selected': selected_job == '{{ row.job_number }}' }">
             <div><em>Select job</em></div>
         </div>
         <div class="hold-toggles">
@@ -46,13 +39,11 @@
             </span>
         </div>
         <div class="scrap-parts select-icon">
-            <object data="static/svg/cancel.svg" type="image/svg+xml">
-                <img src="yourfallback.jpg" />
-            </object>
+            <img x-bind:disabled="selected_job != '{{ row.job_number }}'" src="static/svg/cancel.svg">
             <em>Scrap Parts</em>
         </div>
         <div class="move-txnx">
-            <button>Finish Serialize</button>
+            <button x-bind:disabled="selected_job != '{{ row.job_number }}'">Finish Serialize</button>
         </div>
     </div>
     {% endfor %}
