@@ -1,0 +1,622 @@
+part_id,configuration_id,process_step_num,job_number,start_operator,start_datetime,end_operator,end_datetime,notes,scrapped,created_by,created_datetime,modified_by,modified_datetime
+48544-355A,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48547-167F,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48546-354A,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48554-165D,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48552-028A,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48554-165E,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48552-028B,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48554-165C,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48555-157C,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48555-157F,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48555-157B,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48555-157D,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48555-157A,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48552-028E,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48552-028F,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48552-028C,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48552-028D,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48554-165B,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48554-165A,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48555-157E,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48554-165F,1123,8,6238693,Cristopher Gonzalez,2025-10-23 11:37:43,Cristopher Gonzalez,2025-10-23 11:37:44,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:20,Cristopher.Gonzalez@Poly6.com,2025-10-23 11:37:44
+48570-014D,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48568-026A,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48568-026B,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48570-014C,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48570-014B,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48570-014A,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48568-026C,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48569-027B,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48568-026D,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48568-026E,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48568-026F,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48571-011F,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48569-027A,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48569-027C,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48569-027F,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48569-027D,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48571-011E,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48571-011C,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48571-011D,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48571-011A,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48571-011B,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48570-014F,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48570-014E,1123,8,6238689,Cristopher Gonzalez,2025-10-25 08:43:43,Cristopher Gonzalez,2025-10-25 08:43:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:54:31,Cristopher.Gonzalez@Poly6.com,2025-10-25 08:43:47
+48579-081D,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48579-081F,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48579-081B,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48578-162B,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48578-162E,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48579-081C,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48576-080F,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48576-080E,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48577-012B,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48578-162F,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48578-162D,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48578-162C,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48579-081E,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48579-081A,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48577-012C,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48577-012F,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48577-012A,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48577-012D,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48577-012E,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48576-080D,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48578-162A,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48576-080B,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48576-080C,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48576-080A,1123,8,6238687,Sunny Yang,2025-10-24 11:05:51,Sunny Yang,2025-10-24 11:05:53,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:15,sunny.yang@poly6.com,2025-10-24 11:05:53
+48580-165A,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48582-157C,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48582-157D,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48582-157B,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48900-599A,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48898-597A,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48903-606A,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48896-588A,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48899-598B,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48901-600B,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48903-606B,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48902-605A,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48900-599B,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48896-588B,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48899-598A,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48892-552B,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48902-605B,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48897-596B,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48895-587A,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48893-553B,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48895-587B,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48893-553A,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48892-552A,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48897-596A,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48901-600A,1134,8,6238726,Mansukh Sagparia,2025-10-25 17:39:03,Mansukh Sagparia,2025-10-25 17:39:08,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:57:09,mansukh.sagparia@poly6.com,2025-10-25 17:39:08
+48714-644A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48719-649A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48720-650A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48582-157F,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48581-078F,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48583-028B,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48580-165B,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48582-157A,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48581-078B,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48582-157E,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48583-028D,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48580-165C,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48583-028C,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48580-165D,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48583-028F,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48581-078D,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48583-028A,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48583-028E,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48581-078C,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48581-078E,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48581-078A,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48580-165F,1123,8,6238686,NULL,NULL,NULL,NULL,NULL,NULL,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:55:44,NULL,NULL
+48587-167A,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48585-354E,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48587-167C,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48585-354D,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48584-355B,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48586-356A,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48584-355F,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48584-355E,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48584-355A,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48586-356D,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48586-356C,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48586-356E,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48585-354F,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48584-355D,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48586-356B,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48714-644B,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48721-651B,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48712-624A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48721-651A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48723-653B,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48723-653A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48720-650B,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48715-645A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48718-648B,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48722-652A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48722-652B,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48712-624B,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48713-642A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48717-647B,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48717-647A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48716-646A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48718-648A,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48716-646B,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48715-645B,1134,8,6238733,Mansukh Sagparia,2025-10-25 19:57:57,Mansukh Sagparia,2025-10-25 19:58:00,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:59:39,mansukh.sagparia@poly6.com,2025-10-25 19:58:00
+48934-597B,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48936-599B,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48929-553A,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48937-600B,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48937-600A,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48509-008E,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48511-010A,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48509-008A,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48510-009A,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48510-009E,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48511-010C,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48508-006A,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48511-010D,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48510-009F,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48510-009D,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48510-009B,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48509-008D,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48511-010B,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48511-010E,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48509-008F,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48508-006E,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48508-006F,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48508-006B,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48511-010F,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48509-008C,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48509-008B,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48508-006D,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48508-006C,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48510-009C,1123,8,6238700,Dennison Gabin,2025-10-22 07:22:53,Dennison Gabin,2025-10-22 07:22:56,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:20:49,dennison.gabin@poly6.com,2025-10-22 07:22:56
+48587-167D,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48587-167B,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48585-354A,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48586-356F,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48587-167E,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48587-167F,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48585-354B,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48585-354C,1123,8,6238685,Makaveli Soto,2025-10-23 18:07:30,Makaveli Soto,2025-10-23 18:07:33,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:21,Makaveli.Soto@poly6.com,2025-10-23 18:07:33
+48605-075C,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48606-077E,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48605-075E,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48607-079A,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48605-075D,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48604-076D,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48605-075B,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48605-075F,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48606-077F,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48606-077A,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48607-079F,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48606-077D,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48604-076F,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48604-076E,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48607-079E,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48607-079C,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48604-076B,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48562-011E,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48563-027D,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48560-026B,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48561-014C,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48563-027B,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48563-027A,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48563-027C,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48561-014E,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48562-011B,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48562-011F,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48560-026A,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48560-026C,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48561-014D,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48562-011A,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48563-027E,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48563-027F,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48560-026E,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48562-011D,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48560-026F,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48562-011C,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48560-026D,1123,8,6238691,Dennison Gabin,2025-10-22 07:25:06,Dennison Gabin,2025-10-22 07:52:47,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:24:47,dennison.gabin@poly6.com,2025-10-22 07:52:47
+48574-076A,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48572-075A,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48573-079E,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48928-552A,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48932-588A,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48936-599A,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48929-553B,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48935-598B,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48931-587A,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48938-605A,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48934-597A,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48933-596A,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48935-598A,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48928-552B,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48931-587B,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48939-606B,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48933-596B,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48932-588B,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48938-605B,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48939-606A,1134,8,6238723,Mansukh Sagparia,2025-10-25 19:21:52,Mansukh Sagparia,2025-10-25 19:21:56,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:41:07,mansukh.sagparia@poly6.com,2025-10-25 19:21:56
+48909-596B,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48907-587A,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48904-552B,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48910-598B,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48911-597A,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48905-553B,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48913-600B,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48572-075D,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48574-076D,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48574-076F,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48574-076B,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48575-077B,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48574-076E,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48574-076C,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48573-079C,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48575-077C,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48572-075B,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48573-079D,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48572-075E,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48575-077A,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48573-079A,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48575-077D,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48572-075C,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48573-079F,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48572-075F,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48575-077F,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48573-079B,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48575-077E,1123,8,6238688,Dennison Gabin,2025-10-22 07:55:14,Dennison Gabin,2025-10-22 08:20:17,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 07:54:23,dennison.gabin@poly6.com,2025-10-22 08:20:17
+48557-167A,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48557-167E,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48558-354F,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48604-076C,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48605-075A,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48604-076A,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48607-079B,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48606-077B,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48606-077C,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48607-079D,1123,8,6238680,Marcial Merino,2025-10-25 05:51:49,Marcial Merino,2025-10-25 05:51:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:48:41,marcial.merino@poly6.com,2025-10-25 05:51:53
+48600-011B,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48601-026A,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48600-011A,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48603-014E,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48603-014F,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48601-026B,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48601-026C,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48601-026D,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48601-026E,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48602-027C,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48602-027D,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48602-027A,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48602-027B,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48602-027E,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48602-027F,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48603-014C,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48603-014A,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48559-355F,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48558-354A,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48559-355C,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48557-167F,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48557-167B,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48559-355A,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48558-354E,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48559-355B,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48557-167C,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48559-355E,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48558-354D,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48557-167D,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48559-355D,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48558-354C,1123,8,6238692,Dennison Gabin,2025-10-22 08:22:22,Dennison Gabin,2025-10-22 08:34:39,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 08:21:48,dennison.gabin@poly6.com,2025-10-22 08:34:39
+48529-011D,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48528-026A,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48531-014A,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48530-027F,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48531-014C,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48528-026B,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48529-011B,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48530-027D,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48528-026E,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48531-014B,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48601-026F,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48603-014B,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48600-011E,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48603-014D,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48600-011C,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48600-011F,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48600-011D,1123,8,6238681,Mansukh Sagparia,2025-10-25 14:49:46,Mansukh Sagparia,2025-10-25 14:49:50,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:49:22,mansukh.sagparia@poly6.com,2025-10-25 14:49:50
+48591-012C,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48591-012B,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48588-081C,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48589-080E,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48588-081F,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48588-081A,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48588-081B,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48590-162D,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48590-162B,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48588-081D,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48588-081E,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48590-162A,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48591-012A,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48590-162C,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48590-162E,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48590-162F,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48589-080D,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48591-012D,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48529-011E,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48530-027B,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48531-014E,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48530-027A,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48531-014D,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48529-011C,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48528-026C,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48528-026F,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48529-011F,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48531-014F,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48528-026D,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48530-027E,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48530-027C,1123,8,6238699,Dennison Gabin,2025-10-22 09:18:47,Dennison Gabin,2025-10-22 09:41:18,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 09:18:36,dennison.gabin@poly6.com,2025-10-22 09:41:18
+48547-167C,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48547-167D,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48546-354B,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48545-356B,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48546-354F,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48546-354D,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48544-355D,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48544-355C,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48544-355B,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48544-355F,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48547-167E,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48908-588A,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48908-588B,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48914-605B,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48911-597B,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48907-587B,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48913-600A,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48915-606A,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48909-596A,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48905-553A,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48915-606B,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48910-598A,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48914-605A,1134,8,6238725,Mansukh Sagparia,2025-10-25 18:56:20,Mansukh Sagparia,2025-10-25 18:56:30,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-25 13:43:07,mansukh.sagparia@poly6.com,2025-10-25 18:56:30
+48544-355E,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48545-356F,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48545-356D,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48547-167B,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48546-354C,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48546-354E,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48547-167A,1123,8,6238695,Mansukh Sagparia,2025-10-23 12:22:27,Mansukh Sagparia,2025-10-23 12:22:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-22 13:53:41,mansukh.sagparia@poly6.com,2025-10-23 12:22:31
+48881-553A,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48880-552B,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48887-598B,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48886-597B,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48890-605A,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48889-600A,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48886-597A,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48888-599B,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48888-599A,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48890-605B,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48884-588A,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48885-596B,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48883-587A,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48881-553B,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48885-596A,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48884-588B,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48883-587B,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48889-600B,1134,8,6238727,Marcial Merino,2025-10-28 00:02:31,Marcial Merino,2025-10-28 00:02:37,NULL,No        ,marcial.merino@poly6.com,2025-10-28 00:02:19,marcial.merino@poly6.com,2025-10-28 00:02:37
+48591-012F,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48591-012E,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48589-080A,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48589-080C,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48589-080B,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48589-080F,1123,8,6238684,Jean Abraham,2025-10-26 10:15:50,Jean Abraham,2025-10-26 10:15:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:51:11,jean.abraham@poly6.com,2025-10-26 10:15:53
+48598-028B,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48596-078D,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48597-165A,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48598-028C,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48597-165C,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48597-165B,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48597-165E,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48596-078F,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48597-165D,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48598-028A,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48597-165F,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48598-028E,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48596-078A,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48596-078C,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48596-078E,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48596-078B,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48598-028D,1123,8,6238682,Cristopher Gonzalez,2025-10-25 13:39:52,Cristopher Gonzalez,2025-10-25 13:39:53,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 10:53:53,Cristopher.Gonzalez@Poly6.com,2025-10-25 13:39:53
+48592-075B,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48954-644B,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48955-645B,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48955-645A,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48952-624A,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48960-650A,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48962-652A,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48959-649B,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48961-651A,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48963-653B,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48962-652B,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48958-648B,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48963-653A,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48961-651B,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48959-649A,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48953-642B,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48957-647B,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48957-647A,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48956-646A,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48953-642A,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48952-624B,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+48954-644A,1134,8,6238721,Marcial Merino,2025-10-28 02:25:24,Marcial Merino,2025-10-28 02:39:48,NULL,No        ,marcial.merino@poly6.com,2025-10-28 02:24:12,marcial.merino@poly6.com,2025-10-28 02:39:48
+49127-644A,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49131-648B,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49133-650A,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49135-652A,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49136-653B,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49130-647A,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49133-650B,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+48592-075A,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48595-079B,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48593-076D,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48595-079C,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48592-075E,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48593-076F,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48593-076E,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48594-077F,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48592-075C,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48593-076C,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48594-077E,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48592-075F,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48592-075D,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48594-077B,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48593-076A,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48595-079D,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48593-076B,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48594-077A,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48595-079F,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48595-079A,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48594-077D,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48594-077C,1123,8,6238683,Mansukh Sagparia,2025-10-23 13:55:54,Mansukh Sagparia,2025-10-23 13:56:14,NULL,No        ,jeramiah.rivera@poly6.com,2025-10-23 13:54:06,mansukh.sagparia@poly6.com,2025-10-23 13:56:14
+48862-597A,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48857-553A,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48856-552B,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48862-597B,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48867-606B,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48865-600B,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48864-599A,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48865-600A,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48861-596B,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48859-587B,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48866-605B,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48863-598B,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48860-588A,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48857-553B,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48860-588B,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48861-596A,1134,8,6238729,Mansukh Sagparia,2025-10-25 17:59:29,Mansukh Sagparia,2025-10-25 17:59:34,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:29,mansukh.sagparia@poly6.com,2025-10-25 17:59:34
+48873-596A,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48868-552A,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48874-597A,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48877-600A,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48869-553A,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48874-597B,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48876-599A,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48868-552B,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48879-606B,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48875-598B,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48879-606A,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48878-605B,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48872-588B,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+48872-588A,1134,8,6238728,Mansukh Sagparia,2025-10-25 18:46:27,Mansukh Sagparia,2025-10-25 18:46:31,NULL,No        ,Cristopher.Gonzalez@Poly6.com,2025-10-25 06:56:39,mansukh.sagparia@poly6.com,2025-10-25 18:46:31
+49125-624B,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49135-652B,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49125-624A,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49134-651B,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49128-645A,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49128-645B,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49132-649B,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49129-646A,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49126-642A,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49130-647B,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49126-642B,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49132-649A,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49129-646B,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49134-651A,1134,8,6238715,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:00,NULL,NULL
+49073-599B,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49072-598B,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49070-596A,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49072-598A,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49065-552A,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49065-552B,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49076-606B,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49074-600B,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49066-553B,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49075-605A,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49075-605B,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49069-588A,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49071-597B,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49074-600A,1134,8,6238720,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:16:06,NULL,NULL
+49137-624A,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49142-647B,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49142-647A,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49137-624B,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49143-648A,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49141-646B,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49144-649A,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49140-645B,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49139-644A,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49145-650A,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49146-651A,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49148-653A,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49148-653B,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49146-651B,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49138-642B,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49145-650B,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49144-649B,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49143-648B,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49141-646A,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49140-645A,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49138-642A,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49139-644B,1134,8,6238714,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:18:21,NULL,NULL
+49149-624A,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49152-645B,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49152-645A,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49156-649B,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49157-650B,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49157-650A,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49153-646A,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49158-651B,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49150-642A,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49160-653A,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49156-649A,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49154-648A,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49155-647B,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49155-647A,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49160-653B,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49153-646B,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49150-642B,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49154-648B,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49151-644B,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+49149-624B,1134,8,6238713,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:36,NULL,NULL
+48950-652A,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48942-644B,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48947-649A,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48945-647A,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48943-645A,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48945-647B,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48940-624A,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48943-645B,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48944-646A,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48947-649B,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48946-648B,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48950-652B,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48941-642B,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48949-651A,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48944-646B,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48946-648A,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48948-650B,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48941-642A,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48948-650A,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48951-653A,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+48951-653B,1134,8,6238722,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 07:20:40,NULL,NULL
+49086-600A,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49077-552A,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49080-587A,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49080-587B,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49088-606A,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49078-553B,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49081-588A,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49083-597B,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49085-599B,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49084-598B,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49082-596B,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49085-599A,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49088-606B,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49077-552B,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49083-597A,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49084-598A,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL
+49078-553A,1134,8,6238719,NULL,NULL,NULL,NULL,NULL,NULL,jeramiah.rivera@poly6.com,2025-10-28 13:49:45,NULL,NULL

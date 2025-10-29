@@ -1,9 +1,15 @@
 {% block content %}
+{% load static %}
+
 <div class="filters">
     <div class="left-of-filter">
-        <img src="static/svg/refresh.svg">
-        <input type="text" placeholder="Search Job">
-        <img src="static/svg/reset.svg">
+        <img src="{% static 'svg/refresh.svg' %}">
+        <!-- <input type="text" placeholder="Search Job"> -->
+        <input id="search" type="search" name="q" value="{{ job_search }}" hx-get="/get-jobs/{{ job_search }}"
+            hx-trigger="change, keyup delay:200ms changed" hx-target=".gallery > div" hx-swap="innerHTML"
+            placeholder="Search Job" />
+
+        <img src="{% static 'svg/reset.svg' %}">
     </div>
     <div><u id="gallery-title"><strong>Jobs at Serialize</strong></u></div>
     <div class="right-of-filter">

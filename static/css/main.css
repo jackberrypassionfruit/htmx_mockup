@@ -116,7 +116,16 @@ img {
 
 .move-txnx > button {
     height: 65px;
-    border-radius: 8px;;
+    border-radius: 8px;
+    background-color: lightblue;
+}
+
+.move-txnx > button:active {
+    background-color: rgb(119, 204, 233);
+}
+
+.move-txnx > button:disabled {
+    background-color: white;
 }
 
 
@@ -143,11 +152,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: fixed; */
+    position: fixed;
     z-index: 10;
     width: 80%;
     height: 100%;
-    position: absolute;
     left: 10%;
     top: 0%;
     /* transform: translate(-30%, -40%); */

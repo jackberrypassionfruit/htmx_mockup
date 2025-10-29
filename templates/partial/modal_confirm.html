@@ -1,0 +1,14 @@
+<div class="modal" role="dialog" tabindex="-1" x-show="{{ self_visible }}" x-on:click.away="isModalOpen = false" x-cloak
+    x-transition>
+    <p>isModalOpen: {{ isModalOpen }}</p>
+    <div class="model-inner">
+        <div class="modal-header">
+            <h3>{{ title }}</h3>
+            <button aria-label="Close" x-on:click="{{ self_visible }} = false">✖</button>
+        </div>
+        {{ body }}
+        <button>{{Cancel}}</button>
+        <button x-on:click="{{ self_visible }} = false; {{ next_visible }} = true">{{ confirm_message }}</button>
+    </div>
+</div>
+<div class="overlay" x-show="{{ self_visible }}" x-cloak></div>

@@ -1,51 +1,89 @@
 {% block content %}
+{% load static %}
 
-<div class="gallery" x-data="{ selected_job: 'None' }">
-    {% for row in jobs %}
-    <div class="job-row">
-        <div class="job-row-details">
-            <div>
-                <strong>Job #{{ row.job_number }}</strong>
-                {% if row.request_type == 'Eng Trial' %}
-                <img src="static/svg/flag.svg">
-                {% endif %}
+<form class="gallery" x-data="{ selected_job: 'None' }">
+    <div x-data="{ 'isModalOpen': false }" x-on:keydown.escape="isModalOpen = false">
+        <div x-data="{ 'isModalOpen2': false }" x-on:keydown.escape="isModalOpen2 = false">
+
+            {% for row in jobs %}
+            <div class="job-row">
+                <div class="job-row-details">
+                    <!-- <div>Finsihed: {{ row.scrapped }}</div> -->
+                    <div>
+                        <strong>Job #{{ row.job_number }}</strong>
+                        {% if row.request_type == 'Eng Trial' %}
+                        <img src="{% static 'svg/flag.svg' %}">
+                        {% endif %}
+                    </div>
+                    <div>
+                        <em><strong>Qty Parts: </strong>{{ row.qty_parts }}</em>
+                    </div>
+                </div>
+                <div class="select-job select-icon">
+                    <img src="{% static 'svg/select.svg' %}" @click="selected_job = '{{ row.job_number }}'"
+                        :class="{ 'selected': selected_job == '{{ row.job_number }}' }">
+                    <div><em>Select job</em></div>
+                </div>
+                <div class="hold-toggles">
+                    <span class="eng-review">
+                        <input type="checkbox" id="eng-toggle">
+                        <label for="eng-toggle">Eng Review</label>
+                    </span>
+                    <span class="eng-review">
+                        <input type="checkbox" id="mrb-toggle">
+                        <label for="mrb-toggle">MRB</label>
+                    </span>
+                </div>
+                <div class="data-toggles">
+                    <span class="parts-serialized">
+                        <input type="checkbox" id="serialized-toggle">
+                        <label for="serialized-toggle">All Parts Serialized?</label>
+                    </span>
+                </div>
+                <div class="scrap-parts select-icon" x-show="selected_job == '{{ row.job_number }}'">
+                    <img @click="isModalOpen = true" x-bind:disabled="selected_job != '{{ row.job_number }}'"
+                        hx-get="/get-parts/{{ row.job_number }}" hx-target="next .parts" hx-trigger="click"
+                        hx-swap="innerHTML" src="{% static 'svg/cancel.svg' %}">
+                    <em>Scrap Parts</em>
+                </div>
+                <div class="move-txnx">
+                    <button @click="isModalOpen = true" x-bind:disabled="selected_job != '{{ row.job_number }}'"
+                        hx-get="/get-parts/{{ row.job_number }}" hx-target="next .parts" hx-trigger="click"
+                        hx-swap="innerHTML">Finish Serialize</button>
+                </div>
             </div>
-            <div>
-                <em><strong>Part Number: </strong>{{ row.part_number }}</em>
+            {% endfor %}
+            <div class="modal" role="dialog" tabindex="-1" x-show="isModalOpen" x-on:click.away="isModalOpen = false"
+                x-cloak x-transition>
+                <div class="model-inner">
+                    <div class="modal-header">
+                        <h3>Hello World</h3>
+                        <button aria-label="Close" x-on:click="isModalOpen = false">✖</button>
+                    </div>
+                    <ul class="parts"></ul>
+                    <button>Cancel</button>
+                    <input type="hidden" id="selected-job-input" name="selected_job" x-bind:value="selected_job">
+                    <button x-on:click="isModalOpen = false" id="move" hx-post="/move-job/"
+                        hx-include="#selected-job-input" hx-target=".gallery > div" hx-swap="innerHTML">Move
+                        Parts?</button>
+                </div>
             </div>
-            <div>
-                <em><strong>Qty Parts: </strong>{{ row.qty_parts }}</em>
+            <div class="modal" role="dialog" tabindex="-1" x-show="isModalOpen2" x-on:click.away="isModalOpen2 = false"
+                x-cloak x-transition>
+                <div class="model-inner">
+                    <div class="modal-header">
+                        <h3>Hello World</h3>
+                        <button aria-label="Close" x-on:click="isModalOpen2 = false">✖</button>
+                    </div>
+                    <button x-on:click="isModalOpen2 = false" id="move" name="selected_job_number" hx-post="/move-job/"
+                        value="{{ selected_job}}" x-model="selected_job" hx-target=".gallery > div"
+                        hx-swap="innerHTML">Are you
+                        sure?</button>
+                </div>
             </div>
-        </div>
-        <div class="select-job select-icon">
-            <img src="static/svg/select.svg" @click="selected_job = '{{ row.job_number }}'"
-                :class="{ 'selected': selected_job == '{{ row.job_number }}' }">
-            <div><em>Select job</em></div>
-        </div>
-        <div class="hold-toggles">
-            <span class="eng-review">
-                <input type="checkbox" id="eng-toggle">
-                <label for="eng-toggle">Eng Review</label>
-            </span>
-            <span class="eng-review">
-                <input type="checkbox" id="mrb-toggle">
-                <label for="mrb-toggle">MRB</label>
-            </span>
-        </div>
-        <div class="data-toggles">
-            <span class="parts-serialized">
-                <input type="checkbox" id="serialized-toggle">
-                <label for="serialized-toggle">All Parts Serialized?</label>
-            </span>
-        </div>
-        <div class="scrap-parts select-icon">
-            <img x-bind:disabled="selected_job != '{{ row.job_number }}'" src="static/svg/cancel.svg">
-            <em>Scrap Parts</em>
-        </div>
-        <div class="move-txnx">
-            <button x-bind:disabled="selected_job != '{{ row.job_number }}'">Finish Serialize</button>
+            <div class="overlay" x-show="isModalOpen" x-cloak></div>
+            <div class="overlay" x-show="isModalOpen2" x-cloak></div>
         </div>
     </div>
-    {% endfor %}
-</div>
+</form>
 {% endblock %}
