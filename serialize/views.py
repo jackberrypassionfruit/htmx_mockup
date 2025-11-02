@@ -30,13 +30,13 @@ def get_jobs(request):
         if request.headers.get("HX-Trigger") == "search":
             return render(
                 request,
-                "content/gallery.html",
+                "serialize/content/gallery.html",
                 context={"jobs": not_scrapped_by_job},
             )
 
         return render(
             request,
-            "base/index.html",
+            "serialize/index.html",
             # "testing/modal.html",
             context={"jobs": not_scrapped_by_job, "job_search": search},
         )
@@ -48,7 +48,7 @@ def get_parts(request, job_number):
     ).values("part_id")
     return render(
         request,
-        "partial/parts.html",
+        "serialize/partial/parts.html",
         context={"parts": parts_filtered_by_job},
     )
 
@@ -60,7 +60,7 @@ def modal_popup(request):
 
     return render(
         request,
-        "partial/modal_confirm.html",
+        "serialize/partial/modal_confirm.html",
         context=context,
     )
 
@@ -94,6 +94,6 @@ def move_job(request):
     if request.headers.get("HX-Trigger") == "move":
         return render(
             request,
-            "content/gallery.html",
+            "serialize/content/gallery.html",
             context={"jobs": not_scrapped_by_job},
         )

@@ -1,0 +1,27 @@
+{% block content %}
+{% load static %}
+
+<div class="gantt">
+    <div class="clock-hours">
+        <span>Hood-Printer</span>
+        {% for i in clock_hours %}
+        <span>{{ i }}</span>
+        {% endfor %}
+    </div>
+    <div class="printer-hood-gallery">
+        {% for assigned_printer, print_hood, printer_model, prints in prints_by_printer %}
+        <div class="printer-row">
+            <span class="row-name">{{ print_hood }} - {{assigned_printer }}</span>
+            --
+            <span class="prints" hx-get="style-test/" hx-trigger="click" hx-target=".test-target">
+                {% for print in prints %}<span class="print-cell PN{{ print.part_number }}">
+                    {{ print.print_number }}
+                </span>{% endfor %}
+            </span>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="test-target"></div>
+</div>
+
+{% endblock %}

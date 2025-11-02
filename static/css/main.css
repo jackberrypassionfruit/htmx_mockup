@@ -1,5 +1,6 @@
 body {
     font-size: 15px;
+    font-family: "Consolas", sans-serif;
 }
 
 img {
@@ -142,6 +143,48 @@ img {
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 
+
+
+.clock-hours {
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-between;
+}
+
+.printer-hood-gallery {
+    border: 2px solid black;
+}
+
+.printer-row {
+    margin: .5rem;
+}
+
+.row-name {
+    width: 50px;
+}
+
+.print-cell {
+    padding: 0;
+    margin: 0 2px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    display: inline-block;
+
+    position: absolute;
+    left: calc(95px + 3.5%);
+}
+
+.PN9341028 {
+    width: calc(17% - 20px);
+}
+
+.PN9341024 {
+    width: 160px;
+}
+
+.PN9341023 {
+    width: 100px;
+}
 
 
 [x-cloak] {
