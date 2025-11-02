@@ -14,7 +14,7 @@
             <span class="row-name">{{ print_hood }} - {{assigned_printer }}</span>
             --
             <span class="prints" hx-get="style-test/" hx-trigger="click" hx-target=".test-target">
-                {% for print in prints %}<span class="print-cell PN{{ print.part_number }}">
+                {% for print in prints %}<span class="print-cell" style="width: {{ print.x_coord_style }};">
                     {{ print.print_number }}
                 </span>{% endfor %}
             </span>
