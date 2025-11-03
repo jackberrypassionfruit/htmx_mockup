@@ -1,0 +1,5 @@
+TODO
+    SOLVED - in etl/transform.py - when setting "x_coord_style"
+        "This needs an offset that doesn't mess up the percent"
+        Even though there is meaningful separation between print times, the clock does not line up
+        solution: use percent for both sides of sum
