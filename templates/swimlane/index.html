@@ -1,9 +1,11 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-{% include 'swimlane/content/banner.html' %}
-{% include 'swimlane/content/filters.html' %}
-{% include 'swimlane/content/gantt.html' %}
+<div id="print-root" x-data="{ gap_time: 30, blx: 54.65, selected_hour_index: 12 }">
+    {% include 'swimlane/content/banner.html' %}
+    {% include 'swimlane/content/filters.html' %}
+    {% include 'swimlane/content/gantt.html' %}
+</div>
 
 
 {% endblock %}

@@ -30,21 +30,23 @@ def partition_prints_by_printer_ordered_w_style(today_prints_clean, selected_dat
                     "print_width_style": f"calc({print['estimated_print_time_minutes'] / 17.5}% - 20px)",
                     "x_coord_style": str(
                         (
-                            1.5
+                            0.85
                             * (
                                 parser.parse(print["plan_print_start_datetime"])
-                                - parser.parse(selected_date)
-                            ).seconds
+                                - selected_date
+                            ).total_seconds()
                             / 60
                             # / 2.9
                             # - (prindex * print["estimated_print_time_minutes"])
                         )
-                        + 55
+                        + 160
                     )
                     + "px",
-                    "debug": str(print["estimated_print_time_minutes"])
-                    + "-"
-                    + print["plan_print_start_datetime"][-8:],
+                    # "debug":  # print["plan_print_start_datetime"][-8:],
+                    # (
+                    #     parser.parse(print["plan_print_start_datetime"])
+                    #     - selected_date
+                    # ).total_seconds(),
                 }
                 for prindex, print in enumerate(row.to_dicts())
             ],
@@ -59,3 +61,17 @@ def partition_prints_by_printer_ordered_w_style(today_prints_clean, selected_dat
     ]
 
     return prints_by_printer
+
+
+def filter_and_cache_prints(today_prints, selected_datetime):
+    today_prints = today_prints.filter(
+        pl.col("plan_print_start_datetime").str.to_datetime("%Y-%m-%d %H:%M:%S")
+        < pl.lit(selected_datetime)
+    )
+
+    cached_prints = today_prints.filter(
+        pl.col("plan_print_start_datetime").str.to_datetime("%Y-%m-%d %H:%M:%S")
+        >= pl.lit(selected_datetime)
+    )
+
+    return (today_prints, cached_prints)

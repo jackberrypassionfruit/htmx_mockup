@@ -1,8 +1,49 @@
 {% block content %}
 {% load static %}
 
-<div class="filters">
-    Filters bb
+<div class="filters" x-data="{selected_date: None}">
+    <span class="schedule-day">
+        <label for="schedule-datepicker">Start date:</label>
+        <input hx-get="/refresh/" hx-trigger="input changed" hx-target="next .gantt" hx-swap="innerHTML" type="date"
+            id="schedule-datepicker" name="selected_date" value="2025-10-30" min="2024-01-01" max="2026-12-31" />
+    </span>
+    <span class="schedule-datail-filters">
+        <label for="show-printers">Show Printers:</label>
+        <select id="show-printers" name="printer-model">
+            <option value="550X">Core 550X</option>
+            <option value="550XT">Core 550XT</option>
+            <option value="530X">Core 530X</option>
+        </select>
+        <br>
+        <label for="show-info">Show Info:</label>
+        <select id="show-info" name="prinfo">
+            <option value="basic">Basic</option>
+            <option value="Print Type">Print Type</option>
+        </select>
+    </span>
+    <input type="text" placeholder="Search Bar">
+    <span><img src="{% static 'svg/reset.svg' %}"></span>
+    <span class="schedule-actions">
+        <div>
+            <input type="hidden" id="hidden-selected-time" name="selected_hour_index"
+                x-bind:value="selected_hour_index">
+            <button hx-get="/refresh/" hx-include="#schedule-datepicker, #hidden-selected-time" hx-target="next .gantt"
+                id="schedule-cache">Cache</button>
+            <button>Collect</button>
+        </div>
+        <div>
+            <label for="show-printers">Exclude Printers:</label>
+            <select id="show-printers" name="printer-model">
+                <option value="1">Printer 1</option>
+                <option value="2">Printer 2</option>
+                <option value="3">Printer 3</option>
+            </select>
+            <div>
+                <label for="print-gap-time"><em>Gap Time (min)</em></label>
+                <input type="text" id="print-gap-time" x-model="gap_time">
+            </div>
+        </div>
+    </span>
 </div>
 
 {% endblock %}
