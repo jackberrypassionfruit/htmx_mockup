@@ -1,6 +1,8 @@
 import polars as pl
 from dateutil import parser
 
+datetime_fmt = "%Y-%m-%d %H:%M:%S"
+
 
 def partition_prints_by_printer_ordered_w_style(today_prints_clean, selected_date):
     prints_by_printer = [
@@ -64,14 +66,18 @@ def partition_prints_by_printer_ordered_w_style(today_prints_clean, selected_dat
 
 
 def filter_and_cache_prints(today_prints, selected_datetime):
-    today_prints = today_prints.filter(
-        pl.col("plan_print_start_datetime").str.to_datetime("%Y-%m-%d %H:%M:%S")
-        < pl.lit(selected_datetime)
+    today_prints_filtered = today_prints.filter(
+        pl.col("request_type").str.starts_with("Production")
+        | (
+            pl.col("plan_print_start_datetime").str.to_datetime(datetime_fmt)
+            < pl.lit(selected_datetime)
+        ),
     )
 
     cached_prints = today_prints.filter(
-        pl.col("plan_print_start_datetime").str.to_datetime("%Y-%m-%d %H:%M:%S")
-        >= pl.lit(selected_datetime)
+        ~pl.col("request_type").str.starts_with("Production"),
+        pl.col("plan_print_start_datetime").str.to_datetime(datetime_fmt)
+        >= pl.lit(selected_datetime),
     )
 
-    return (today_prints, cached_prints)
+    return (today_prints_filtered, cached_prints)

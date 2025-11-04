@@ -1,12 +1,31 @@
 {% block content %}
 {% load static %}
 
-<div class="filters" x-data="{selected_date: None}">
-    <span class="schedule-day">
-        <label for="schedule-datepicker">Start date:</label>
-        <input hx-get="/refresh/" hx-trigger="input changed" hx-target="next .gantt" hx-swap="innerHTML" type="date"
-            id="schedule-datepicker" name="selected_date" value="2025-10-30" min="2024-01-01" max="2026-12-31" />
-    </span>
+<div class="filters" x-data="{
+        selected_date: new Date().toLocaleDateString('en-CA').split('T')[0], 
+        addDays(date, days) {
+            let d = new Date(date + 'T00:00:00');
+            d.setDate(d.getDate() + days);
+            return d.toISOString().split('T')[0];
+        },
+        dincrement(days) {
+            this.selected_date = this.addDays(this.selected_date, days);
+            this.$nextTick(() => {
+                this.$dispatch('selected-date-changed', { selected_date: this.selected_date });
+            });
+        }
+    }">
+    <div class="schedule-day">
+        <label for=" schedule-datepicker">Start date:</label>
+        <div>
+            <button @click="dincrement(-1)">&lt;</button>
+            <input hx-get="/refresh/" hx-trigger="input changed, selected-date-changed from:.filters"
+                hx-target="next .gantt" hx-swap="innerHTML" type="date" x-model="selected_date" id="schedule-datepicker"
+                name="selected_date" value="selected_date" min="2024-01-01" max="2026-12-31" />
+            <button @click="dincrement(1)">&gt;</button>
+        </div>
+        <!-- <input type="text" id="hidden-selected-date" name="selected_date" x-bind:value="selected_date"> -->
+    </div>
     <span class="schedule-datail-filters">
         <label for="show-printers">Show Printers:</label>
         <select id="show-printers" name="printer-model">
@@ -22,7 +41,8 @@
         </select>
     </span>
     <input type="text" placeholder="Search Bar">
-    <span><img src="{% static 'svg/reset.svg' %}"></span>
+    <span><img src="{% static 'svg/reset.svg' %}" id="reset-schedule" hx-get="/refresh/" hx-target="next .gantt"
+            hx-include="#schedule-datepicker"></span>
     <span class="schedule-actions">
         <div>
             <input type="hidden" id="hidden-selected-time" name="selected_hour_index"

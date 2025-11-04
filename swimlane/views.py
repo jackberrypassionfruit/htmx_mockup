@@ -23,11 +23,6 @@ clock_hours = [
 in_file_path = os.path.join(".", "swimlane", "test_files", "schedule_swimlane_now.csv")
 selected_date = parser.parse("2025-10-31")
 
-# today_prints = get_scheduled_prints_df(in_file_path)
-# prints_by_printer = partition_prints_by_printer_ordered_w_style(
-#     today_prints, selected_date
-# )
-
 
 def refresh_prints(selected_date):
     today_prints = get_scheduled_prints_df(in_file_path)
@@ -55,7 +50,6 @@ def schedule(request):
         return render(
             request,
             "swimlane/index.html",
-            # "testing/modal.html",
             context=context,
         )
 
@@ -82,7 +76,12 @@ def refresh(request):
             (today_prints, cached_prints) = filter_and_cache_prints(
                 today_prints, selected_datetime
             )
+            print(f"{cached_prints=}")
 
+            prints_by_printer = repaint_day(today_prints, selected_date)
+        elif request.headers.get("HX-Trigger") == "reset-schedule":
+            selected_date = parser.parse(request.GET.get("selected_date"))
+            today_prints = refresh_prints(selected_date)
             prints_by_printer = repaint_day(today_prints, selected_date)
 
         context["prints_by_printer"] = prints_by_printer
