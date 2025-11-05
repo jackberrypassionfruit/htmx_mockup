@@ -2,7 +2,8 @@
 {% load static %}
 
 <div class="filters" x-data="{
-        selected_date: new Date().toLocaleDateString('en-CA').split('T')[0], 
+        selected_date: new Date('2025-10-31').toISOString().split('T')[0], 
+        <!-- selected_date: new Date().toLocaleDateString('en-CA').split('T')[0],  -->
         addDays(date, days) {
             let d = new Date(date + 'T00:00:00');
             d.setDate(d.getDate() + days);
@@ -19,12 +20,11 @@
         <label for=" schedule-datepicker">Start date:</label>
         <div>
             <button @click="dincrement(-1)">&lt;</button>
-            <input hx-get="/refresh/" hx-trigger="input changed, selected-date-changed from:.filters"
-                hx-target="next .gantt" hx-swap="innerHTML" type="date" x-model="selected_date" id="schedule-datepicker"
-                name="selected_date" value="selected_date" min="2024-01-01" max="2026-12-31" />
+            <input hx-get="/refresh/" hx-trigger="input changed, selected-date-changed from:.filters" hx-target=".gantt"
+                hx-swap="innerHTML" type="date" x-model="selected_date" id="schedule-datepicker" name="selected_date"
+                value="selected_date" min="2024-01-01" max="2026-12-31" />
             <button @click="dincrement(1)">&gt;</button>
         </div>
-        <!-- <input type="text" id="hidden-selected-date" name="selected_date" x-bind:value="selected_date"> -->
     </div>
     <span class="schedule-datail-filters">
         <label for="show-printers">Show Printers:</label>
@@ -49,7 +49,8 @@
                 x-bind:value="selected_hour_index">
             <button hx-get="/refresh/" hx-include="#schedule-datepicker, #hidden-selected-time" hx-target="next .gantt"
                 id="schedule-cache">Cache</button>
-            <button>Collect</button>
+            <button hx-get="/collect/" hx-include="#schedule-datepicker, #hidden-selected-time, #print-gap-time"
+                hx-target="next .gantt" id="schedule-collect">Collect</button>
         </div>
         <div>
             <label for="show-printers">Exclude Printers:</label>
@@ -60,7 +61,7 @@
             </select>
             <div>
                 <label for="print-gap-time"><em>Gap Time (min)</em></label>
-                <input type="text" id="print-gap-time" x-model="gap_time">
+                <input type="text" name="min_gap_time" id="print-gap-time" x-model="gap_time">
             </div>
         </div>
     </span>
