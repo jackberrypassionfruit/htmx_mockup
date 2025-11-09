@@ -1,0 +1,70 @@
+{% block content %}
+{% load static %}
+
+<div class="test" x-data='{
+    list: [
+        "Kazunari", 
+        "Mitsunori", 
+        "Seiko",
+        "Toyota",
+        "Sushi",
+        "Rishi",
+        "Kairi"
+    ].map((val, index) => ({ value: val, index: `${(5 * index) % 3}0px` })),
+
+    config: {
+        animation: 150,
+        ghostClass: "opacity-20",
+        dragClass: "bg-blue-50",
+    },
+
+    sort() {
+        return {
+            list: this.list,
+            init() {
+                // preserve Alpine "this"
+                const component = this;
+
+                Sortable.create(this.$refs.items, {
+                    ...component.config,
+                    onEnd(evt) {
+                        const from = evt.oldIndex;
+                        const to = evt.newIndex;
+                        if (from === to) return;
+
+                        // Swap elements in Alpine data
+                        const tmp = component.list[from];
+                        component.list[from] = component.list[to];
+                        component.list[to] = tmp;
+
+                        // Trigger reactivity
+                        component.list = [...component.list];
+                    },
+                });
+            },
+        };
+    },
+}'>
+    <div x-data="sort()" x-init="init()">
+        <ul x-ref="items" :style="{
+            display: 'flex', 
+            flexFlow: 'column wrap',
+            height: '90px',
+        }">
+            <template x-for="item in list">
+                <li class="flex border rounded shadow" :data-id="item.value"
+                    data-offset=`${item.index}` 
+                    {% comment %} 
+                    :style="{ transform: `translateX(${item.index})` }" 
+                    {% endcomment %} 
+                    :style="{ paddingLeft: `${item.index}` }">
+                    <div class="testButt">
+                        <span x-text="item.value"></span>
+                    </div>
+                </li>
+            </template>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

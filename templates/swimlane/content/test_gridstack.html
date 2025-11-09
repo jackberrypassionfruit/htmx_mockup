@@ -1,0 +1,49 @@
+{% block content %}
+{% load static %}
+
+<script>
+function printSchedule() {
+    return {
+        grid: null,
+        serializedData: [
+            {id: 0, x: 0, y: 0, w: 1, h: 1, content: 'Item 1'},
+            {id: 1, x: 1, y: 0, w: 1, h: 1, content: 'Item 2'},
+            {id: 2, x: 2, y: 0, w: 1, h: 1, content: 'Item 3'}
+        ],
+
+        init() {
+            // Wait until Alpine has rendered the DOM
+            Alpine.nextTick(() => {
+                // ✅ Initialize GridStack on the specific ref
+                this.grid = GridStack.init(
+                  {
+                    column: 6,
+                    float: false,
+                    disableResize: true,
+                    acceptWidgets: true,
+                    cellHeight: 80,
+                  },
+                  this.$refs.grid
+                );
+        
+                // ✅ Load serialized data (creates DOM automatically)
+                this.grid.load(this.serializedData);
+        
+                // ✅ Optional: listen for movement
+                this.grid.on('change', (e, items) => {
+                  console.log('Grid changed:', items);
+                });
+              });
+        }
+    }
+}
+</script>
+
+<div x-data="printSchedule()" x-init="init()">
+    <h3>🧱 GridStack + Alpine.js</h3>
+    <!-- This is the element GridStack will attach to -->
+    <div x-ref="grid" class="grid-stack"></div>
+</div>
+
+  
+{% endblock %}

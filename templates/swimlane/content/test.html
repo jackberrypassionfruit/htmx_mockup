@@ -1,0 +1,56 @@
+{% block content %}
+{% load static %}
+
+<div class="test" x-data='{
+    list: [
+        "Kazunari", 
+        "Mitsunori", 
+        "Seiko",
+        "Toyota",
+        "Sushi",
+        "Rishi",
+        "Kairi"
+    ].map((val, index) => ({ value: val, index: `${(5 * index) % 3}0px` })),
+
+    config: {	
+        swap: true, // Enable swap mode
+	    // swapClass: "sortable-swap-highlight", // Class name for swap item (if swap mode is enabled)
+        swapClass: "highlight",
+        animation: 750,
+        // ghostClass: "opacity-20",
+        // dragClass: "bg-blue-50",
+    },
+
+    sort() {
+        return {
+            list: this.list,
+            init() {
+                // preserve Alpine "this"
+                const component = this;
+
+                Sortable.create(this.$refs.items, component.config);
+            },
+        };
+    },
+}'>
+    <div x-data="sort()" x-init="init()">
+        <div x-ref="items" :style="{
+            display: 'flex', 
+            flexFlow: 'column wrap',
+            height: '170px',
+        }" class="list-group">
+            <template x-for="item in list">
+                <div class="flex border rounded shadow list-group-item" :data-id="item.value"
+                    data-offset=`${item.index}` 
+                    {% comment %} 
+                    :style="{ transform: `translateX(${item.index})` }" 
+                    {% endcomment %} 
+                    :style="{ paddingLeft: `${item.index}` }"
+                    x-text="item.value">
+                </div>
+            </template>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

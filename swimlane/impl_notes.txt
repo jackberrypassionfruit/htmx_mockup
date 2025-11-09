@@ -1,0 +1,131 @@
+Print Schedule LP Implementation Notes
+
+ROB & Jack inputs
+- list of eng Trial PNs, printers, and start times
+- will be shared as Excel out put, so both Jack and Rob are scheduling based off of the same information
+
+
+
+Visaul output of Collected prints before commiting schedule change
+- how many eng trails & how many prod prints got schedule
+	- Out of Cached, previously-unscheduled prints
+
+
+INIT
+	KEEP - active_printers
+		WHERE condition IN ( 'Production', 'Onboarding' )
+
+	KEEP - scheduled_prints
+		current schedule, including "new" prints
+			ie. have time, but no assigned_printer
+		[VW.Configuration.Prints_Schedule]
+			Currently, this view is filter from yesterday forward in time
+
+	KEEP - scheduled_prints_initial
+		"The current schedule + a unique identifier of 
+			1) print_number
+			2) assigned_printer
+			3) plan_print_start_datetime
+		full copy of [VW.Configuration.Prints_Schedule]
+
+	
+INPUTS
+	KEEP (V2) - excluded printers
+		printers SHOULD be maintained in Equipment Hub, but if we need to exclude printrrs in the UI then allow that here
+		*** This might totally F with the LP solution ***
+		*** but it likely won't be the only thing doing that ***
+
+	more?
+
+CACHE
+	KEEP - selected_start_time
+		time forward from which print jobs will be cached, to be (re)scheduled
+		either the current time, or a time chosen in the future
+
+	KEEP - unscheduled_prints
+		filtering scheduled_prints to:
+			- after selected_start_time
+			- Only Production
+			- Not cancelled
+
+	scheduled_prints
+		filter out unscheduled_prints, based on print_number
+
+	NEW
+
+	eng_trial_scheduled_prints
+		filtering scheduled_prints to:
+			- after selected_start_time
+			- Only Engineering Trial
+			- Not cancelled
+		"This tool needs to be able to see existing Eng Trial prints, because the Gurobi LP has already blocked those print start times off"
+		"This list helps us know which print times/printers to ignore"
+	
+
+CURRENT COLLECT
+	eligible_printers
+		active_printers filtered by User Selection
+
+	initial_production_start_time
+		either selected_start_time or "earliest post-gap time from latest print end" time, whichever is earliest
+
+	LOGIC
+		for "unique job_number" in unscheduled_prints:
+			latest_scheduled_start_other_job
+				post-gap time after latest current_schedule_attempt (not this job), or after initial_production_start_time
+
+			new_print_start_time & new_print_end_time
+				times based on latest_scheduled_start_other_job and the print you're trying to schedule
+
+			potential_overlapping_prints
+				all non-scrapped, scheduled prints which do not start with a (gap+print_duration) away from any existing print starts
+
+			for print in "prints per this unscheduled job":
+				Collect(current_schedule_attempt)
+					{
+						'job_number': this_job,
+						'print_number': this_print,
+						... all other immutable characteristics ...
+						
+						'plan_print_start_datetime': new_print_start_time,
+						'estimated_plan_print_end_datetime': new_print_end_time,
+						'assigned_printer':
+							Filter(
+								eligible_printers,
+
+								- valid models per print "platform"
+								- non-MBraun ***this will change slightly***
+								- printer not already chosen for this job
+								- last print on this printer ends before this new prints would start
+								- print does not overlap with potential_overlapping_prints on this printer
+								- 
+							)
+					}
+		"Done with each iteration of checking all unscheduled jobs"
+		confirmed_scheduled_prints
+			all jobs where every print in the job succeeded in choosing an 'assigned_printer'
+		"If any prints in unscheduled_prints exist outside of a job in confirmed_scheduled_prints"
+			fail_iter++
+
+		if fail_iter > 0:
+			"run the above iteration again, but with an time_offset*fail_iter applied"
+			"the first print will just keep trying later in gap_time increments until a full print job can be scheduled"
+		
+		else:
+			scheduled_prints
+				add back confirmed_scheduled_prints where assign_printer <> NULL
+				"<> NULL are the prints that still fail after many iters, and should be reported back to the user clearly so they cantweak UI inputs until it works"
+
+
+NEW COLLECT
+	import the new print times from Rob's models
+		comes in a matrix of {
+			print_start_datetime, 
+			block_index, 
+			part_number
+		}
+
+	This constraint means I cannot order by print_number, as I want to
+	Instead, I will traverse his list in order of time, to make checking printer availability easier
+	Do I also go in order of part_number? Because then it is easier to pick off the next relevant print job
+	
