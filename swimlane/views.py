@@ -6,6 +6,7 @@ from .etl.transform import (
     filter_and_cache_prints,
     schedule_cached_prints,
 )
+import polars as pl
 from datetime import datetime, timedelta
 from dateutil import parser
 import os
@@ -103,11 +104,15 @@ def refresh(request):
 
 
 def collect(request):
+    global today_prints
+    global cached_prints
+    global prints_by_printer
+
     min_gap_time = int(request.GET.get("min_gap_time"))
     selected_date = parser.parse(request.GET.get("selected_date"))
     selected_hour_index = int(request.GET.get("selected_hour_index"))
     selected_datetime = selected_date + timedelta(hours=selected_hour_index)
-    test_val = schedule_cached_prints(
+    confirmed_scheduled_prints = schedule_cached_prints(
         min_gap_time,
         selected_datetime,
         active_printers,
@@ -115,8 +120,16 @@ def collect(request):
         cached_prints,
     )
 
-    return HttpResponse(test_val)
-    # return HttpResponse("Look ma no payload!")
+    today_prints = pl.concat([today_prints, confirmed_scheduled_prints])
+    prints_by_printer = repaint_day(today_prints, selected_date)
+
+    context = {"clock_hours": clock_hours, "prints_by_printer": prints_by_printer}
+
+    return render(
+        request,
+        "swimlane/content/gantt.html",
+        context=context,
+    )
 
     # confirmed_scheduled_prints = schedule_cached_prints()
 

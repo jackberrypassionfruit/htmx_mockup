@@ -1,3 +1,4 @@
+from .extract import schema_dict
 import polars as pl
 from dateutil import parser
 from datetime import timedelta
@@ -30,7 +31,7 @@ def partition_prints_by_printer_ordered_w_style(today_prints_clean, selected_dat
                         + 160
                     )
                     + "px",
-                    # "debug":  # print["plan_print_start_datetime"][-8:],
+                    "debug": print["plan_print_start_datetime"][-8:],
                     # (
                     #     parser.parse(print["plan_print_start_datetime"])
                     #     - selected_date
@@ -94,8 +95,8 @@ def schedule_cached_prints(
         )
     elif (
         parser.parse(newest_prod_print) - selected_start_time
-    ) > minimum_gap_between_prints_minutes:
-        initial_production_start_time = newest_prod_print
+    ).total_seconds() / 60 > minimum_gap_between_prints_minutes:
+        initial_production_start_time = parser.parse(newest_prod_print)
     else:
         initial_production_start_time = selected_start_time - timedelta(
             minutes=minimum_gap_between_prints_minutes
@@ -105,7 +106,7 @@ def schedule_cached_prints(
 
     iter_count = 0
     fail_count = 0
-    confirmed_scheduled_prints = []
+    confirmed_scheduled_prints = pl.DataFrame()
 
     test_l = []
 
@@ -125,31 +126,50 @@ def schedule_cached_prints(
                 )
 
                 latest_scheduled_start_other_job = (
-                    # current_schedule_attempt.filter(
-                    #     pl.col("job_number") != pl.lit(job_number)
-                    # )
-                    # .max("plan_print_start_datetime")
-                    # .item()
-                    # or confirmed_scheduled_prints.filter(
-                    #     pl.col("job_number") != pl.lit(job_number)
-                    # )
-                    # .max("plan_print_start_datetime")
-                    # .item()
-                    # or
-                    initial_production_start_time
+                    (
+                        None
+                        if current_schedule_attempt.is_empty()
+                        else parser.parse(
+                            current_schedule_attempt.filter(
+                                pl.col("job_number") != pl.lit(job_number)
+                            )
+                            .select(pl.max("plan_print_start_datetime"))
+                            .item()
+                        )
+                    )
+                    or (
+                        None
+                        if confirmed_scheduled_prints.is_empty()
+                        else parser.parse(
+                            confirmed_scheduled_prints.filter(
+                                pl.col("job_number") != pl.lit(job_number)
+                            )
+                            .select(pl.max("plan_print_start_datetime"))
+                            .item()
+                        )
+                    )
+                    or initial_production_start_time
                 ) + timedelta(minutes=fail_count * minimum_gap_between_prints_minutes)
 
+                print(f"{current_schedule_attempt.is_empty()=}")
+                print(f"{confirmed_scheduled_prints.is_empty()=}")
+                print(f"{latest_scheduled_start_other_job=}")
                 # test_l.append(latest_scheduled_start_other_job)
 
                 new_print_start_time = latest_scheduled_start_other_job + timedelta(
-                    minutes=fail_count * minimum_gap_between_prints_minutes
+                    minutes=minimum_gap_between_prints_minutes
                 )
+                if not current_schedule_attempt.is_empty():
+                    print(
+                        f"{current_schedule_attempt.select("job_number", 'plan_print_start_datetime', 'assigned_printer')=}"
+                    )
+                print()
 
                 new_print_end_time = new_print_start_time + timedelta(
                     minutes=this_job_estimated_print_time_minutes
                 )
 
-                potential_overlapping_prints = cached_prints.filter(
+                potential_overlapping_prints = scheduled_prints.filter(
                     pl.col("plan_print_start_datetime").str.to_datetime(datetime_fmt)
                     >= (
                         new_print_start_time
@@ -171,8 +191,141 @@ def schedule_cached_prints(
                 for print_this_job in cached_prints.filter(
                     pl.col("job_number") == pl.lit(job_number)
                 ).to_dicts():
-                    # print(print_this_job)
-                    # TODO Leaving off at line 138: Collect(current_schedule_attempt)
-                    next_print_attempt = {}
+                    next_print_attempt = print_this_job
+                    next_print_attempt["plan_print_start_datetime"] = (
+                        new_print_start_time
+                    )
+                    next_print_attempt["estimated_plan_print_end_datetime"] = (
+                        new_print_end_time
+                    )
+                    next_print_attempt["printer_hood"] = ""
 
-    return test_l
+                    # TODO Leaving off at line 143: Set assigned_printer
+                    avail_printers = []
+                    for printer in eligible_printers:
+                        # 1 check if this printers' last print will be finished
+                        # by the time this next print is to schedule
+                        last_end_time_current_schedule_attempt = (
+                            None
+                            if current_schedule_attempt.is_empty()
+                            else (
+                                (
+                                    current_schedule_attempt.filter(
+                                        pl.col("assigned_printer")
+                                        == pl.lit(print_this_job["assigned_printer"])
+                                    )
+                                )
+                                .select(pl.max("estimated_plan_print_end_datetime"))
+                                .item()
+                            )
+                        )
+                        last_end_time_confirmed_scheduled_prints = (
+                            None
+                            if confirmed_scheduled_prints.is_empty()
+                            else (
+                                confirmed_scheduled_prints.filter(
+                                    pl.col("assigned_printer")
+                                    == pl.lit(print_this_job["assigned_printer"])
+                                )
+                            )
+                            .select(pl.max("estimated_plan_print_end_datetime"))
+                            .item()
+                        )
+
+                        is_this_printer_finished_with_last_print = (
+                            last_end_time_current_schedule_attempt is None
+                            and last_end_time_confirmed_scheduled_prints is None
+                        ) or (
+                            parser.parse(
+                                last_end_time_current_schedule_attempt
+                                or last_end_time_confirmed_scheduled_prints
+                            )
+                            <= latest_scheduled_start_other_job
+                        )
+                        # is_this_printer_finished_with_last_print = True
+
+                        # 2 make sure this next print does not overlap
+                        # with any "potential_overlapping_prints"
+                        noverlaps_w_this_round = (
+                            potential_overlapping_prints.filter(
+                                pl.col("assigned_printer")
+                                == pl.lit(print_this_job["assigned_printer"]),
+                                new_print_start_time
+                                < pl.col(
+                                    "estimated_plan_print_end_datetime"
+                                ).str.to_datetime(datetime_fmt)
+                                + pl.duration(
+                                    minutes=minimum_gap_between_prints_minutes
+                                ),
+                                pl.col("plan_print_start_datetime").str.to_datetime(
+                                    datetime_fmt
+                                )
+                                - pl.duration(
+                                    minutes=minimum_gap_between_prints_minutes
+                                )
+                                <= new_print_end_time,
+                            )
+                            .select(pl.count())
+                            .item()
+                        ) == 0
+
+                        # 3 Make sure new print start time doesn't come within gap_time
+                        # of any pre-existing prints
+
+                        # TODO merge this with above
+
+                        if (
+                            is_this_printer_finished_with_last_print
+                            and noverlaps_w_this_round
+                        ):
+                            avail_printers.append(printer)
+
+                        if len(avail_printers) >= 1:
+                            next_print_attempt["printer_hood"] = sorted(
+                                avail_printers,
+                                key=lambda x: (x["equipment_id"], x["printer_hood"]),
+                                reverse=False,
+                            )[0]["equipment_id"]
+                        else:
+                            next_print_attempt["printer_hood"] = ""
+
+                    # current_schedule_attempt.append(next_print_attempt)
+                    current_schedule_attempt = pl.concat(
+                        [
+                            current_schedule_attempt,
+                            pl.from_dict(
+                                next_print_attempt, schema=schema_dict, strict=False
+                            ),
+                        ]
+                    )
+
+                    # print(current_schedule_attempt)
+
+            # TODO - Update only sets to "0", mabye None
+            print(current_schedule_attempt.select("assigned_printer", "printer_hood"))
+            # fix printer_hood to match assigned_printer
+            current_schedule_attempt.update(
+                active_printers.select("equipment_id", "printer_hood"),
+                left_on=["assigned_printer"],
+                right_on=["equipment_id"],
+                how="inner",
+            )
+            print(current_schedule_attempt.select("assigned_printer", "printer_hood"))
+            print()
+
+            # ex. df.update(new_df, left_on=["A"], right_on=["C"], how="full")
+
+            confirmed_scheduled_prints = pl.concat(
+                [confirmed_scheduled_prints, current_schedule_attempt]
+            )
+
+    # print(
+    #     confirmed_scheduled_prints.select(
+    #         "job_number",
+    #         # "print_number",
+    #         # "plan_print_start_datetime",
+    #         # "estimated_plan_print_end_datetime",
+    #         # "estimated_print_time_minutes",
+    #     )
+    # )
+    return confirmed_scheduled_prints
