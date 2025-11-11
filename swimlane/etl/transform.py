@@ -31,7 +31,8 @@ def partition_prints_by_printer_ordered_w_style(today_prints_clean, selected_dat
                         + 160
                     )
                     + "px",
-                    "debug": print["plan_print_start_datetime"][-8:],
+                    "debug": print["job_number"],
+                    # print["plan_print_start_datetime"][-8:],
                     # (
                     #     parser.parse(print["plan_print_start_datetime"])
                     #     - selected_date
@@ -151,9 +152,9 @@ def schedule_cached_prints(
                     or initial_production_start_time
                 ) + timedelta(minutes=fail_count * minimum_gap_between_prints_minutes)
 
-                print(f"{current_schedule_attempt.is_empty()=}")
-                print(f"{confirmed_scheduled_prints.is_empty()=}")
-                print(f"{latest_scheduled_start_other_job=}")
+                # print(f"{current_schedule_attempt.is_empty()=}")
+                # print(f"{confirmed_scheduled_prints.is_empty()=}")
+                # print(f"{latest_scheduled_start_other_job=}")
                 # test_l.append(latest_scheduled_start_other_job)
 
                 new_print_start_time = latest_scheduled_start_other_job + timedelta(
@@ -161,9 +162,9 @@ def schedule_cached_prints(
                 )
                 if not current_schedule_attempt.is_empty():
                     print(
-                        f"{current_schedule_attempt.select("job_number", 'plan_print_start_datetime', 'assigned_printer')=}"
+                        f"{current_schedule_attempt.select("job_number", 'plan_print_start_datetime', 'assigned_printer', 'printer_hood')=}"
                     )
-                print()
+                # print()
 
                 new_print_end_time = new_print_start_time + timedelta(
                     minutes=this_job_estimated_print_time_minutes
@@ -212,7 +213,7 @@ def schedule_cached_prints(
                                 (
                                     current_schedule_attempt.filter(
                                         pl.col("assigned_printer")
-                                        == pl.lit(print_this_job["assigned_printer"])
+                                        == pl.lit(printer["equipment_id"])
                                     )
                                 )
                                 .select(pl.max("estimated_plan_print_end_datetime"))
@@ -225,7 +226,7 @@ def schedule_cached_prints(
                             else (
                                 confirmed_scheduled_prints.filter(
                                     pl.col("assigned_printer")
-                                    == pl.lit(print_this_job["assigned_printer"])
+                                    == pl.lit(printer["equipment_id"])
                                 )
                             )
                             .select(pl.max("estimated_plan_print_end_datetime"))
@@ -274,22 +275,38 @@ def schedule_cached_prints(
 
                         # TODO merge this with above
 
+                        # 4 make sure this job is not already being printed on this printer
+                        noverlaps_w_this_job = (
+                            True
+                            if current_schedule_attempt.is_empty()
+                            else (
+                                current_schedule_attempt.filter(
+                                    pl.col("job_number") == pl.lit(job_number),
+                                    pl.col("assigned_printer")
+                                    == pl.lit(printer["equipment_id"]),
+                                )
+                                .select(pl.count())
+                                .item()
+                            )
+                            == 0
+                        )
+
                         if (
                             is_this_printer_finished_with_last_print
                             and noverlaps_w_this_round
+                            and noverlaps_w_this_job
                         ):
                             avail_printers.append(printer)
 
                         if len(avail_printers) >= 1:
-                            next_print_attempt["printer_hood"] = sorted(
+                            next_print_attempt["assigned_printer"] = sorted(
                                 avail_printers,
-                                key=lambda x: (x["equipment_id"], x["printer_hood"]),
+                                key=lambda x: (x["printer_hood"], x["equipment_id"]),
                                 reverse=False,
                             )[0]["equipment_id"]
                         else:
-                            next_print_attempt["printer_hood"] = ""
+                            next_print_attempt["assigned_printer"] = ""
 
-                    # current_schedule_attempt.append(next_print_attempt)
                     current_schedule_attempt = pl.concat(
                         [
                             current_schedule_attempt,
@@ -302,7 +319,11 @@ def schedule_cached_prints(
                     # print(current_schedule_attempt)
 
             # TODO - Update only sets to "0", mabye None
-            print(current_schedule_attempt.select("assigned_printer", "printer_hood"))
+            print(
+                current_schedule_attempt.select(
+                    "assigned_printer", "printer_hood", "job_number"
+                )
+            )
             # fix printer_hood to match assigned_printer
             current_schedule_attempt.update(
                 active_printers.select("equipment_id", "printer_hood"),
@@ -310,8 +331,8 @@ def schedule_cached_prints(
                 right_on=["equipment_id"],
                 how="inner",
             )
-            print(current_schedule_attempt.select("assigned_printer", "printer_hood"))
-            print()
+            # print(current_schedule_attempt.select("assigned_printer", "printer_hood"))
+            # print()
 
             # ex. df.update(new_df, left_on=["A"], right_on=["C"], how="full")
 

@@ -54,7 +54,7 @@ def get_scheduled_prints_df(in_file_path):
 
 
 def get_active_printers_df(in_file_path):
-    schema_dict = pl.Schema(
+    schema_dict_printers = pl.Schema(
         {
             "equipment_id": str,
             "common_name": str,
@@ -64,7 +64,9 @@ def get_active_printers_df(in_file_path):
             "printer_hood": str,
         }
     )
-    active_printers = pl.read_csv(in_file_path, schema=schema_dict, separator=",")
+    active_printers = pl.read_csv(
+        in_file_path, schema=schema_dict_printers, separator=","
+    )
     active_printers_clean = active_printers
 
     return active_printers_clean
