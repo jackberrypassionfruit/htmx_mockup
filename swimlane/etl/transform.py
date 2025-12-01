@@ -31,8 +31,7 @@ def partition_prints_by_printer_ordered_w_style(today_prints_clean, selected_dat
                         + 160
                     )
                     + "px",
-                    "debug": print["job_number"],
-                    # print["plan_print_start_datetime"][-8:],
+                    "debug": print["plan_print_start_datetime"][-8:],
                     # (
                     #     parser.parse(print["plan_print_start_datetime"])
                     #     - selected_date
@@ -152,19 +151,9 @@ def schedule_cached_prints(
                     or initial_production_start_time
                 ) + timedelta(minutes=fail_count * minimum_gap_between_prints_minutes)
 
-                # print(f"{current_schedule_attempt.is_empty()=}")
-                # print(f"{confirmed_scheduled_prints.is_empty()=}")
-                # print(f"{latest_scheduled_start_other_job=}")
-                # test_l.append(latest_scheduled_start_other_job)
-
                 new_print_start_time = latest_scheduled_start_other_job + timedelta(
                     minutes=minimum_gap_between_prints_minutes
                 )
-                if not current_schedule_attempt.is_empty():
-                    print(
-                        f"{current_schedule_attempt.select("job_number", 'plan_print_start_datetime', 'assigned_printer', 'printer_hood')=}"
-                    )
-                # print()
 
                 new_print_end_time = new_print_start_time + timedelta(
                     minutes=this_job_estimated_print_time_minutes
@@ -201,7 +190,6 @@ def schedule_cached_prints(
                     )
                     next_print_attempt["printer_hood"] = ""
 
-                    # TODO Leaving off at line 143: Set assigned_printer
                     avail_printers = []
                     for printer in eligible_printers:
                         # 1 check if this printers' last print will be finished
@@ -243,7 +231,6 @@ def schedule_cached_prints(
                             )
                             <= latest_scheduled_start_other_job
                         )
-                        # is_this_printer_finished_with_last_print = True
 
                         # 2 make sure this next print does not overlap
                         # with any "potential_overlapping_prints"
@@ -316,25 +303,13 @@ def schedule_cached_prints(
                         ]
                     )
 
-                    # print(current_schedule_attempt)
-
-            # TODO - Update only sets to "0", mabye None
-            print(
-                current_schedule_attempt.select(
-                    "assigned_printer", "printer_hood", "job_number"
-                )
-            )
             # fix printer_hood to match assigned_printer
-            current_schedule_attempt.update(
+            current_schedule_attempt = current_schedule_attempt.update(
                 active_printers.select("equipment_id", "printer_hood"),
                 left_on=["assigned_printer"],
                 right_on=["equipment_id"],
                 how="inner",
             )
-            # print(current_schedule_attempt.select("assigned_printer", "printer_hood"))
-            # print()
-
-            # ex. df.update(new_df, left_on=["A"], right_on=["C"], how="full")
 
             confirmed_scheduled_prints = pl.concat(
                 [confirmed_scheduled_prints, current_schedule_attempt]
