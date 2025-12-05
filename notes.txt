@@ -1,0 +1,5 @@
+
+
+TODOs
+    for transform.schedule_cached_prints(), try to build and append to current_schedule_attempt as a list of dicts instead of one growing pl.DataFrame
+    This might be faster

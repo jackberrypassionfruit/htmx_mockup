@@ -1,21 +1,17 @@
 [project]
-name = "htmx-chub"
+name = "app"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "django>=5.2.7",
-    "django-htmx>=1.26.0",
-    "django-inline-svg>=0.1.1",
-    "gunicorn>=23.0.0",
-]
-
-[dependency-groups]
-dev = [
+    "django>=5.2.8",
     "django-extensions>=4.1",
+    "django-htmx>=1.27.0",
+    "django-inline-svg>=0.1.1",
     "django-livereload-server>=0.5.1",
-    "ipykernel>=7.1.0",
-    "polars>=1.34.0",
-    "werkzeug>=3.1.3",
+    "gunicorn>=23.0.0",
+    "polars-lts-cpu>=1.33.1",
+    "python-dateutil>=2.9.0.post0",
+    "werkzeug>=3.1.4",
 ]

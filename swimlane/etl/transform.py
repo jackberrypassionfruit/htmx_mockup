@@ -1,7 +1,7 @@
 from .extract import schema_dict
 import polars as pl
 from dateutil import parser
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 datetime_fmt = "%Y-%m-%d %H:%M:%S"
 
@@ -21,7 +21,7 @@ def partition_prints_by_printer_ordered_w_style(today_prints_clean, selected_dat
                         (
                             0.85
                             * (
-                                parser.parse(print["plan_print_start_datetime"])
+                                datetime.strptime(print["plan_print_start_datetime"], datetime_fmt)
                                 - selected_date
                             ).total_seconds()
                             / 60
@@ -33,7 +33,7 @@ def partition_prints_by_printer_ordered_w_style(today_prints_clean, selected_dat
                     + "px",
                     "debug": print["plan_print_start_datetime"][-8:],
                     # (
-                    #     parser.parse(print["plan_print_start_datetime"])
+                    #     datetime.strptime(print["plan_print_start_datetime"], datetime_fmt)
                     #     - selected_date
                     # ).total_seconds(),
                 }
@@ -79,30 +79,39 @@ def schedule_cached_prints(
     scheduled_prints,
     cached_prints,
 ):
-    eligible_printers = active_printers.filter(
-        ~pl.col("printer_hood").str.starts_with("M")
-    ).to_dicts()
+    checkpoint_now = datetime.now()
+    checkpoint_then = checkpoint_now
+    checkpoint_start = checkpoint_now
+    i = 1
+    print(f'Checkpoint #{i=}')
+    print(checkpoint_now - checkpoint_then, '\n\n')
+    
+    eligible_printers = sorted(
+            active_printers.filter(
+            ~pl.col("printer_hood").str.starts_with("M")
+        ).to_dicts(),
+        key=lambda x: (x["printer_hood"], x["equipment_id"]),
+        reverse=False,
+    )
 
     newest_prod_print = (
         scheduled_prints.filter(~pl.col("printer_hood").str.starts_with("M"))
         .select(pl.max("plan_print_start_datetime"))
         .item()
     )
-
+    
     if not newest_prod_print:
         initial_production_start_time = selected_start_time - timedelta(
             minutes=minimum_gap_between_prints_minutes
         )
     elif (
-        parser.parse(newest_prod_print) - selected_start_time
+        datetime.strptime(newest_prod_print, datetime_fmt) - selected_start_time
     ).total_seconds() / 60 > minimum_gap_between_prints_minutes:
-        initial_production_start_time = parser.parse(newest_prod_print)
+        initial_production_start_time = datetime.strptime(newest_prod_print, datetime_fmt)
     else:
         initial_production_start_time = selected_start_time - timedelta(
             minutes=minimum_gap_between_prints_minutes
         )
-
-    # return initial_production_start_time
 
     iter_count = 0
     fail_count = 0
@@ -129,25 +138,21 @@ def schedule_cached_prints(
                     (
                         None
                         if current_schedule_attempt.is_empty()
-                        else parser.parse(
-                            current_schedule_attempt.filter(
+                        else datetime.strptime(current_schedule_attempt.filter(
                                 pl.col("job_number") != pl.lit(job_number)
                             )
                             .select(pl.max("plan_print_start_datetime"))
-                            .item()
-                        )
+                            .item(), datetime_fmt)
                     )
                     or (
                         None
                         if confirmed_scheduled_prints.is_empty()
-                        else parser.parse(
-                            confirmed_scheduled_prints.filter(
+                        else datetime.strptime(confirmed_scheduled_prints.filter(
                                 pl.col("job_number") != pl.lit(job_number)
                             )
                             .select(pl.max("plan_print_start_datetime"))
-                            .item()
+                            .item(), datetime_fmt)
                         )
-                    )
                     or initial_production_start_time
                 ) + timedelta(minutes=fail_count * minimum_gap_between_prints_minutes)
 
@@ -190,7 +195,7 @@ def schedule_cached_prints(
                     )
                     next_print_attempt["printer_hood"] = ""
 
-                    avail_printers = []
+                    next_print_attempt["assigned_printer"] = ""
                     for printer in eligible_printers:
                         # 1 check if this printers' last print will be finished
                         # by the time this next print is to schedule
@@ -225,12 +230,17 @@ def schedule_cached_prints(
                             last_end_time_current_schedule_attempt is None
                             and last_end_time_confirmed_scheduled_prints is None
                         ) or (
-                            parser.parse(
+                            datetime.strptime(
                                 last_end_time_current_schedule_attempt
-                                or last_end_time_confirmed_scheduled_prints
+                                or last_end_time_confirmed_scheduled_prints, 
+                                datetime_fmt
                             )
+                        
                             <= latest_scheduled_start_other_job
                         )
+                        
+                        if not is_this_printer_finished_with_last_print:
+                            continue
 
                         # 2 make sure this next print does not overlap
                         # with any "potential_overlapping_prints"
@@ -256,6 +266,9 @@ def schedule_cached_prints(
                             .select(pl.count())
                             .item()
                         ) == 0
+                        
+                        if not noverlaps_w_this_round:
+                            continue
 
                         # 3 Make sure new print start time doesn't come within gap_time
                         # of any pre-existing prints
@@ -277,23 +290,15 @@ def schedule_cached_prints(
                             )
                             == 0
                         )
+                        
+                        if not noverlaps_w_this_job:
+                            continue
+                        
+                        # If it passes all the test, chose this printer and break out of the for loop
+                        next_print_attempt["assigned_printer"] = printer["equipment_id"]
+                        break
 
-                        if (
-                            is_this_printer_finished_with_last_print
-                            and noverlaps_w_this_round
-                            and noverlaps_w_this_job
-                        ):
-                            avail_printers.append(printer)
-
-                        if len(avail_printers) >= 1:
-                            next_print_attempt["assigned_printer"] = sorted(
-                                avail_printers,
-                                key=lambda x: (x["printer_hood"], x["equipment_id"]),
-                                reverse=False,
-                            )[0]["equipment_id"]
-                        else:
-                            next_print_attempt["assigned_printer"] = ""
-
+                    
                     current_schedule_attempt = pl.concat(
                         [
                             current_schedule_attempt,
@@ -302,7 +307,7 @@ def schedule_cached_prints(
                             ),
                         ]
                     )
-
+                        
             # fix printer_hood to match assigned_printer
             current_schedule_attempt = current_schedule_attempt.update(
                 active_printers.select("equipment_id", "printer_hood"),
@@ -324,4 +329,12 @@ def schedule_cached_prints(
     #         # "estimated_print_time_minutes",
     #     )
     # )
+    
+    duration = datetime.now() - checkpoint_start
+    print("Total print time:")
+    print(duration, end="\n\n\n")
+    
+    # for p in eligible_printers:
+    #     print(f'{p['printer_hood']=}, {p['equipment_id']=}')
+    
     return confirmed_scheduled_prints

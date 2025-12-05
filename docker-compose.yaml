@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    container_name: htmx-chub
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    # command: '/bin/sh -c "while : ; do sleep 1 ; done ;"'
+    command: uv run manage.py runserver 0.0.0.0:8000
