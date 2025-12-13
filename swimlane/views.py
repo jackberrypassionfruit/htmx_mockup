@@ -1,11 +1,14 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.contrib.sessions.models import Session
+from django.utils import timezone
 from .etl.extract import get_scheduled_prints_df, get_active_printers_df
 from .etl.transform import (
     partition_prints_by_printer_ordered_w_style,
     filter_and_cache_prints,
     schedule_cached_prints,
 )
+from .utils import df_store
 import polars as pl
 from datetime import datetime, timedelta
 from dateutil import parser
@@ -34,6 +37,7 @@ selected_date = parser.parse("2025-10-31")
 
 active_printers = get_active_printers_df(active_printers_file_path)
 
+session_key = None
 
 def refresh_prints():
     today_prints = get_scheduled_prints_df(scheduled_prints_file_path)
@@ -66,12 +70,35 @@ def schedule(request):
             "swimlane/index.html",
             context=context,
         )
+    # This was getting called when I uploaded a file,
+    # because it was the last request submitted
+    
+    # elif request.method == "POST":
+    #     print('Gotcha')
+    #     context = {
+    #         "clock_hours": clock_hours,
+    #         "prints_by_printer": prints_by_printer,
+    #     }
+    #     return render(
+    #         request,
+    #         "swimlane/index.html",
+    #         context=context,
+    #     )
 
 
 def refresh(request):
     global today_prints
     global cached_prints
     global prints_by_printer
+    
+    # TODO use session_key & utils.py to store these df's per user session
+    session_key = request.session.session_key
+    if not session_key:
+        request.session.create()
+        session_key = request.session.session_key
+        
+    print(f'{request.FILES=}')
+        
     if request.method == "GET":
         context = {"clock_hours": clock_hours}
         selected_date = parser.parse(request.GET.get("selected_date"))
@@ -94,6 +121,12 @@ def refresh(request):
             )
 
             prints_by_printer = repaint_day(today_prints, selected_date)
+            
+        session_key = request.session.session_key
+        if not session_key:
+            request.session.create()
+            session_key = request.session.session_key
+        print(session_key)
 
         context["prints_by_printer"] = prints_by_printer
         return render(

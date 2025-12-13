@@ -127,7 +127,7 @@ def schedule_cached_prints(
 
             for job_number in pl.Series(
                 cached_prints.unique(subset="job_number").select("job_number")
-            ).to_list():
+            ).sort().to_list():
                 this_job_estimated_print_time_minutes = (
                     cached_prints.filter(pl.col("job_number") == pl.lit(job_number))
                     .select(pl.first("estimated_print_time_minutes"))
