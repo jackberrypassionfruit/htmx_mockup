@@ -39,6 +39,7 @@ active_printers = get_active_printers_df(active_printers_file_path)
 
 session_key = None
 
+
 def refresh_prints():
     today_prints = get_scheduled_prints_df(scheduled_prints_file_path)
     return today_prints
@@ -72,7 +73,7 @@ def schedule(request):
         )
     # This was getting called when I uploaded a file,
     # because it was the last request submitted
-    
+
     # elif request.method == "POST":
     #     print('Gotcha')
     #     context = {
@@ -90,15 +91,15 @@ def refresh(request):
     global today_prints
     global cached_prints
     global prints_by_printer
-    
+
     # TODO use session_key & utils.py to store these df's per user session
     session_key = request.session.session_key
     if not session_key:
         request.session.create()
         session_key = request.session.session_key
-        
-    print(f'{request.FILES=}')
-        
+
+    # print(f'{request.FILES=}')
+
     if request.method == "GET":
         context = {"clock_hours": clock_hours}
         selected_date = parser.parse(request.GET.get("selected_date"))
@@ -121,7 +122,7 @@ def refresh(request):
             )
 
             prints_by_printer = repaint_day(today_prints, selected_date)
-            
+
         session_key = request.session.session_key
         if not session_key:
             request.session.create()
