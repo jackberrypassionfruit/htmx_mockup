@@ -3,7 +3,6 @@
 
 <div class="filters" x-data="{
         selected_date: new Date('2025-10-31').toISOString().split('T')[0], 
-        <!-- selected_date: new Date().toLocaleDateString('en-CA').split('T')[0],  -->
         addDays(date, days) {
             let d = new Date(date + 'T00:00:00');
             d.setDate(d.getDate() + days);

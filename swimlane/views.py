@@ -15,6 +15,22 @@ from dateutil import parser
 import os
 import json
 
+from functools import wraps
+from time import time
+
+
+def timing(f):
+    @wraps(f)
+    def wrap(*args, **kw):
+        ts = time()
+        result = f(*args, **kw)
+        te = time()
+        print("func:%r args:[%r, %r] took: %2.4f sec" % (f.__name__, args, kw, te - ts))
+        return result
+
+    return wrap
+
+
 # Create your views here.
 
 clock_hours = [
@@ -127,7 +143,7 @@ def refresh(request):
         if not session_key:
             request.session.create()
             session_key = request.session.session_key
-        print(session_key)
+        # print(session_key)
 
         context["prints_by_printer"] = prints_by_printer
         return render(
@@ -137,6 +153,7 @@ def refresh(request):
         )
 
 
+@timing
 def collect(request):
     global today_prints
     global cached_prints
