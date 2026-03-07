@@ -61,6 +61,7 @@ def filter_and_cache_prints(today_prints, selected_datetime):
     today_prints_filtered = today_prints.filter(
         # pl.col("request_type").str.starts_with("Production") |
         pl.col("printer_hood").str.starts_with("M")
+        # pl.col("platform").str.starts_with("Core 530X")
         | (
             pl.col("plan_print_start_datetime").str.to_datetime(datetime_fmt)
             < pl.lit(selected_datetime)
@@ -70,6 +71,7 @@ def filter_and_cache_prints(today_prints, selected_datetime):
     pending_tasks = today_prints.filter(
         # ~pl.col("request_type").str.starts_with("Production"),
         ~pl.col("printer_hood").str.starts_with("M"),
+        # ~pl.col("platform").str.starts_with("Core 530X"),
         pl.col("plan_print_start_datetime").str.to_datetime(datetime_fmt)
         >= pl.lit(selected_datetime),
     )
@@ -347,7 +349,7 @@ def schedule_cached_prints(
     available_resources,
     committed_tasks,
     pending_tasks,
-    num_worker=1,
+    num_worker=2,
 ):
     # Filter to non-M printers and sort, same as before
     resources = sorted(
@@ -363,7 +365,8 @@ def schedule_cached_prints(
 
     # Determine initial production start time (same logic as before)
     newest_scheduled_task_time = (
-        committed_tasks.filter(~pl.col("printer_hood").str.starts_with("M"))
+        # committed_tasks.filter(~pl.col("printer_hood").str.starts_with("M"))
+        committed_tasks.filter(~pl.col("platform").str.starts_with("Core 530X"))
         .select(pl.max("plan_print_start_datetime"))
         .item()
     )
@@ -485,7 +488,7 @@ def schedule_cached_prints(
                     resource_id = this_resource["equipment_id"]
 
                     # ------------------------------------------------------------------
-                    #    Helper: check whether a candidate (start, end) window overlaps
+                    #    Check whether a candidate (start, end) window overlaps
                     #    any existing interval on a given printer, respecting the gap.
                     #
                     #    Two intervals [A_start, A_end] and [B_start, B_end] conflict if:

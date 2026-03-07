@@ -11,7 +11,7 @@ schema_dict = pl.Schema(
         "assigned_printer": str,
         "printer_hood": str,
         "printer_model": str,
-        "completion_date": pl.Date,
+        # "completion_date": pl.Date,
         "job_number": str,
         "print_number": int,
         "qty_parts": int,
@@ -19,14 +19,14 @@ schema_dict = pl.Schema(
         "print_file": str,
         "print_file_name_cfg": str,
         "material_file_name_cfg": str,
-        "estimated_print_time": str,
+        # "estimated_print_time": str,
         "estimated_print_time_minutes": int,
-        "master_job_map_pk_id": int,
-        "estimated_plan_print_end_datetime": str,
-        "actual_print_start_datetime": str,
+        # "master_job_map_pk_id": int,
+        # "estimated_plan_print_end_datetime": str,
+        # "actual_print_start_datetime": str,
         "actual_print_end_datetime": str,
         "scrapped": str,
-        "duplicate_estimated_end_times": str,
+        # "duplicate_estimated_end_times": str,
     }
 )
 
@@ -35,7 +35,7 @@ def get_scheduled_prints_df(in_file_path):
     today_prints = pl.read_csv(in_file_path, schema=schema_dict, separator=",")
     today_prints_clean = (
         today_prints
-        .filter(pl.col("scrapped").str.starts_with("No"))
+        .filter(pl.col("scrapped").str.starts_with("NULL"))
         # .select(
         #     "request_type",
         #     "part_number",

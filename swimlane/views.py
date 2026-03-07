@@ -43,12 +43,12 @@ clock_hours = [
 ]
 
 scheduled_prints_file_path = os.path.join(
-    ".", "swimlane", "test_files", "schedule_swimlane_now.csv"
+    ".", "swimlane", "test_files", "print_schedule_2026-03-07.csv"
 )
 active_printers_file_path = os.path.join(
-    ".", "swimlane", "test_files", "active_printers.csv"
+    ".", "swimlane", "test_files", "active_printers_2026-03-07.csv"
 )
-selected_date = parser.parse("2025-10-31")
+selected_date = parser.parse("2026-03-04")
 # selected_date = parser.parse(str(datetime.now().date()))
 
 active_printers = get_active_printers_df(active_printers_file_path)
@@ -70,8 +70,8 @@ def repaint_day(selected_prints, selected_date):
 
 
 today_prints = refresh_prints()
+print(today_prints)
 prints_by_printer = repaint_day(today_prints, selected_date)
-
 # this list will later be used to store the updated schedule
 cached_prints = []
 
